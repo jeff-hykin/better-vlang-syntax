@@ -1,6 +1,12 @@
 comment.block.documentation.v
 comment.line.double-slash.v
 constant.language.v
+constant.numeric.binary.v
+constant.numeric.exponential.v
+constant.numeric.float.v
+constant.numeric.hex.v
+constant.numeric.integer.v
+constant.numeric.octal.v
 entity.name.alias.v
 entity.name.import.v
 entity.name.module.v
@@ -25,6 +31,7 @@ meta.expr.numeric.cast.v
 meta.function.attribute.v
 meta.import.v
 meta.module.v
+punctuation.accessor.v
 punctuation.definition.begin.bracket.square.v
 punctuation.definition.bracket.curly.begin.v
 punctuation.definition.bracket.curly.end.v
@@ -40,6 +47,7 @@ punctuation.definition.other.semicolon.v
 punctuation.delimiter.comma.v
 punctuation.delimiter.period.dot.v
 punctuation.hash.v
+punctuation.separator.comma.v
 punctuation.separator.key-value.colon.v
 storage.modifier.attribute.v
 storage.modifier.v

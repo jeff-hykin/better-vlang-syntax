@@ -11,7 +11,85 @@
   ],
   "patterns": [
     {
+      "include": "#comments"
+    },
+    {
       "include": "#as_is"
+    },
+    {
+      "include": "#attributes"
+    },
+    {
+      "include": "#assignment"
+    },
+    {
+      "include": "#module_decl"
+    },
+    {
+      "include": "#import_decl"
+    },
+    {
+      "include": "#hash_decl"
+    },
+    {
+      "include": "#brackets"
+    },
+    {
+      "include": "#builtin_fix"
+    },
+    {
+      "include": "#escaped_fix"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#function_limited_overload_decl"
+    },
+    {
+      "include": "#function_extend_decl"
+    },
+    {
+      "include": "#function_decl"
+    },
+    {
+      "include": "#function_exist"
+    },
+    {
+      "include": "#generic"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#type"
+    },
+    {
+      "include": "#enum"
+    },
+    {
+      "include": "#interface"
+    },
+    {
+      "include": "#struct"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#storage"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#types"
+    },
+    {
+      "include": "#punctuations"
     }
   ],
   "repository": {
@@ -63,8 +141,8 @@
     "brackets": {
       "patterns": [
         {
-          "begin": "{",
-          "end": "}",
+          "begin": "\\{",
+          "end": "\\}",
           "beginCaptures": {
             "0": {
               "name": "punctuation.definition.bracket.curly.begin.v"
@@ -77,7 +155,7 @@
           },
           "patterns": [
             {
-              "include": "#$inital_context"
+              "include": "$self"
             }
           ]
         },
@@ -96,7 +174,7 @@
           },
           "patterns": [
             {
-              "include": "#$inital_context"
+              "include": "$self"
             }
           ]
         },
@@ -115,7 +193,7 @@
           },
           "patterns": [
             {
-              "include": "#$inital_context"
+              "include": "$self"
             }
           ]
         }
@@ -140,7 +218,7 @@
           "name": "keyword.control.v"
         },
         {
-          "match": "i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)(?=\\s*\\()",
+          "match": "(?<!\\w)(?:(?:int)|(?:i8)|(?:i16)|(?:i64)|(?:i128)|(?:u8)|(?:u16)|(?:u32)|(?:u64)|(?:u128)|(?:f32)|(?:f64))(?!\\w)(?=\\s*\\()",
           "name": "meta.expr.numeric.cast.v storage.type.numeric.v"
         },
         {
@@ -248,6 +326,34 @@
       },
       "name": "meta.module.v"
     },
+    "numbers": {
+      "patterns": [
+        {
+          "match": "(?:[0-9]+(?:_?))+(?:\\.)(?:[0-9]+[eE][-+]?[0-9]+)",
+          "name": "constant.numeric.exponential.v"
+        },
+        {
+          "match": "(?:[0-9]+(?:_?))+(?:\\.)(?:[0-9]+)",
+          "name": "constant.numeric.float.v"
+        },
+        {
+          "match": "(?:0b)(?:(?:[0-1]+)(?:_?))+",
+          "name": "constant.numeric.binary.v"
+        },
+        {
+          "match": "(?:0o)(?:(?:[0-7]+)(?:_?))+",
+          "name": "constant.numeric.octal.v"
+        },
+        {
+          "match": "(?:0x)(?:(?:[0-9a-fA-F]+)(?:_?))+",
+          "name": "constant.numeric.hex.v"
+        },
+        {
+          "match": "(?:(?:[0-9]+)(?:[_]?))+",
+          "name": "constant.numeric.integer.v"
+        }
+      ]
+    },
     "operators": {
       "patterns": [
         {
@@ -304,9 +410,33 @@
         }
       ]
     },
+    "punctuations": {
+      "patterns": [
+        {
+          "match": "\\.",
+          "name": "punctuation.accessor.v"
+        },
+        {
+          "match": ",",
+          "name": "punctuation.separator.comma.v"
+        }
+      ]
+    },
     "storage": {
       "match": "(?<!\\w)(?:(?:const)|(?:mut)|(?:pub))(?!\\w)",
       "name": "storage.modifier.v"
+    },
+    "types": {
+      "patterns": [
+        {
+          "match": "(?<!\\.)(?<!\\w)(?:(?:int)|(?:i8)|(?:i16)|(?:i64)|(?:i128)|(?:u8)|(?:u16)|(?:u32)|(?:u64)|(?:u128)|(?:f32)|(?:f64))(?!\\w)",
+          "name": "storage.type.numeric.v"
+        },
+        {
+          "match": "(?<!\\.)(?<!\\w)(?:(?:bool)|(?:byte)|(?:byteptr)|(?:charptr)|(?:voidptr)|(?:string)|(?:ustring)|(?:rune))(?!\\w)",
+          "name": "storage.type.$0.v"
+        }
+      ]
     }
   }
 }
