@@ -1,9 +1,9 @@
 {
   "version": "",
   "name": "V",
-  "scopeName": "source.v",
+  "scopeName": "source",
   "fileTypes": [
-    ".v",
+    "",
     ".vh",
     ".vsh",
     ".vv",
@@ -20,12 +20,12 @@
       "end": "[\\w.]*",
       "beginCaptures": {
         "1": {
-          "name": "keyword.$1.v"
+          "name": "keyword.$1.source"
         }
       },
       "endCaptures": {
         "0": {
-          "name": "entity.name.alias.v"
+          "name": "entity.name.alias.source"
         }
       }
     },
@@ -33,40 +33,158 @@
       "match": "(?:\\s)+((?:(?::=)|=|(?:\\+=)|(?:\\-=)|(?:\\*=)|(?:\\/=)|(?:%=)|(?:&=)|(?:\\|=)|(?:\\^=)|(?:~=)|(?:&&=)|(?:\\|\\|=)|(?:>>=)|(?:<<=)))(?:\\s)+",
       "captures": {
         "1": {
-          "name": "keyword.operator.assignment.v"
+          "name": "keyword.operator.assignment.source"
         }
       },
-      "name": "meta.definition.variable.v"
+      "name": "meta.definition.variable.source"
     },
     "assignment_operator": {
       "match": "(?:(?::=)|=|(?:\\+=)|(?:\\-=)|(?:\\*=)|(?:\\/=)|(?:%=)|(?:&=)|(?:\\|=)|(?:\\^=)|(?:~=)|(?:&&=)|(?:\\|\\|=)|(?:>>=)|(?:<<=))",
-      "name": "keyword.operator.assignment.v"
+      "name": "keyword.operator.assignment.source"
+    },
+    "attributes": {
+      "match": "^(?:(?:\\s)+)?((\\[)((?:(?:deprecated)|(?:unsafe_fn)|(?:console)|(?:heap)|(?:debug)|(?:manualfree)|(?:typedef)|(?:live)|(?:inline)|(?:flag)|(?:ref_only)|(?:windows_stdcall)|(?:direct_array_access)))(\\]))",
+      "captures": {
+        "1": {
+          "name": "meta.function.attribute.source"
+        },
+        "2": {
+          "name": "punctuation.definition.begin.bracket.square.source"
+        },
+        "3": {
+          "name": "storage.modifier.attribute.source"
+        },
+        "4": {
+          "name": "punctuation.definition.end.bracket.square.source"
+        }
+      },
+      "name": "meta.definition.attribute.source"
+    },
+    "brackets": {
+      "patterns": [
+        {
+          "begin": "{",
+          "end": "}",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.bracket.curly.begin.source"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.bracket.curly.end.source"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#$inital_context"
+            }
+          ]
+        },
+        {
+          "begin": "\\(",
+          "end": "\\)",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.bracket.round.begin.source"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.bracket.round.end.source"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#$inital_context"
+            }
+          ]
+        },
+        {
+          "begin": "\\[",
+          "end": "\\]",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.bracket.square.begin.source"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.bracket.square.end.source"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#$inital_context"
+            }
+          ]
+        }
+      ]
+    },
+    "hash_decl": {
+      "begin": "^(?:(?:\\s)+)?\\#",
+      "end": "(?:(?:\\n)|$)",
+      "beginCaptures": {
+      },
+      "endCaptures": {
+      },
+      "name": "markup.bold.source"
+    },
+    "import_decl": {
+      "begin": "^(?:(?:\\s)+)?(import)(?:\\s)+",
+      "end": "[\\w.]+",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.import.source"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "entity.name.import.source"
+        }
+      },
+      "name": "meta.import.source"
+    },
+    "module_decl": {
+      "begin": "^(?:(?:\\s)+)?(module)(?:\\s)+",
+      "end": "[\\w.]+",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.module.source"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "entity.name.module.source"
+        }
+      },
+      "name": "meta.module.source"
     },
     "operators": {
       "patterns": [
         {
           "match": "(?:(?:\\+\\+)|(?:\\-\\-)|(?:\\+)|(?:\\-)|(?:\\*)|(?:\\/)|%)",
-          "name": "keyword.operator.arithmetic.v"
+          "name": "keyword.operator.arithmetic.source"
         },
         {
           "match": "(?:(?:==)|(?:!=)|(?:>=)|(?:<=)|(?<!>)>(?!>)|(?<!<)<(?!<))",
-          "name": "keyword.operator.relation.v"
+          "name": "keyword.operator.relation.source"
         },
         {
           "match": "(?:(?::=)|=|(?:\\+=)|(?:\\-=)|(?:\\*=)|(?:\\/=)|(?:%=)|(?:&=)|(?:\\|=)|(?:\\^=)|(?:~=)|(?:&&=)|(?:\\|\\|=)|(?:>>=)|(?:<<=))",
-          "name": "keyword.operator.assignment.v"
+          "name": "keyword.operator.assignment.source"
         },
         {
           "match": "(?:&|(?:\\|)|(?:\\^)|~|(?:>>)|(?:<<))",
-          "name": "keyword.operator.bitwise.v"
+          "name": "keyword.operator.bitwise.source"
         },
         {
           "match": "(?:(?:&&)|(?:\\|\\|)|!)",
-          "name": "keyword.operator.logical.v"
+          "name": "keyword.operator.logical.source"
         },
         {
           "match": "\\?",
-          "name": "keyword.operator.optional.v"
+          "name": "keyword.operator.optional.source"
         }
       ]
     }
