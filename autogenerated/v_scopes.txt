@@ -1,3 +1,6 @@
+comment.block.documentation.v
+comment.line.double-slash.v
+constant.language.v
 entity.name.alias.v
 entity.name.import.v
 entity.name.module.v
@@ -12,9 +15,11 @@ keyword.operator.bitwise.v
 keyword.operator.logical.v
 keyword.operator.optional.v
 keyword.operator.relation.v
+keyword.other.escaped.v
 markup.bold.v
 meta.definition.attribute.v
 meta.definition.variable.v
+meta.escaped.keyword.v
 meta.expr.bool.cast.v
 meta.expr.numeric.cast.v
 meta.function.attribute.v
@@ -27,7 +32,15 @@ punctuation.definition.bracket.round.begin.v
 punctuation.definition.bracket.round.end.v
 punctuation.definition.bracket.square.begin.v
 punctuation.definition.bracket.square.end.v
+punctuation.definition.comment.begin.v
+punctuation.definition.comment.end.v
 punctuation.definition.end.bracket.square.v
+punctuation.definition.other.questionmark.v
+punctuation.definition.other.semicolon.v
+punctuation.delimiter.comma.v
+punctuation.delimiter.period.dot.v
+punctuation.hash.v
+punctuation.separator.key-value.colon.v
 storage.modifier.attribute.v
 storage.modifier.v
 storage.type.$0.v

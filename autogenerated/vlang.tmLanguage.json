@@ -128,7 +128,7 @@
           "name": "storage.modifier.v"
         },
         {
-          "match": "(?<!\\w)fn|type|enum|struct|union|interface|map|assert|sizeof|typeof|__offsetof(?!\\w)(?=\\s*\\()",
+          "match": "(?<!\\w)(?:(?:fn)|(?:type)|(?:typeof)|(?:enum)|(?:struct)|(?:interface)|(?:map)|(?:assert)|(?:sizeof)|(?:__offsetof))(?!\\w)(?=\\s*\\()",
           "name": "keyword.$0.v"
         },
         {
@@ -136,7 +136,7 @@
           "name": "keyword.control.v"
         },
         {
-          "match": "(?<!\\w)as|in|is|or|break|continue|default|unsafe|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm(?!\\w)(?=\\s*\\()",
+          "match": "(?<!\\w)(?:(?:as)|(?:it)|(?:is)|(?:in)|(?:or)|(?:break)|(?:continue)|(?:default)|(?:unsafe)|(?:match)|(?:if)|(?:else)|(?:for)|(?:go)|(?:goto)|(?:defer)|(?:return)|(?:shared)|(?:select)|(?:rlock)|(?:lock)|(?:atomic)|(?:asm))(?!\\w)(?=\\s*\\()",
           "name": "keyword.control.v"
         },
         {
@@ -144,10 +144,54 @@
           "name": "meta.expr.numeric.cast.v storage.type.numeric.v"
         },
         {
-          "match": "(?<!\\w)bool|byte|byteptr|charptr|voidptr|string|rune|size_t(?!\\w)(?=\\s*\\()",
+          "match": "bool|byte|byteptr|charptr|voidptr|string|rune|size_t(?=\\s*\\()",
           "name": "meta.expr.bool.cast.v storage.type.$0.v"
         }
       ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "begin": "\\/\\*",
+          "end": "\\*\\/",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.begin.v"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.end.v"
+            }
+          },
+          "name": "comment.block.documentation.v",
+          "patterns": [
+            {
+              "include": "#comments"
+            }
+          ]
+        },
+        {
+          "begin": "\\/\\/",
+          "end": "(?:(?:\\n)|$)",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.begin.v"
+            }
+          },
+          "endCaptures": {
+          },
+          "name": "comment.line.double-slash.v"
+        }
+      ]
+    },
+    "constants": {
+      "match": "(?<!\\w)(?:(?:true)|(?:false)|(?:none))(?!\\w)",
+      "name": "constant.language.v"
+    },
+    "escaped_fix": {
+      "match": "(?:@)(?:mut|pub|fn|unsafe|module|import|as|const|map|assert|sizeof|__offsetof|typeof|type|struct|interface|enum|in|is|or|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm|i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)|bool|byte|byteptr|charptr|voidptr|string|ustring|rune)",
+      "name": "meta.escaped.keyword.v keyword.other.escaped.v"
     },
     "hash_decl": {
       "begin": "^(?:(?:\\s)+)?\\#",
@@ -172,6 +216,22 @@
         }
       },
       "name": "meta.import.v"
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "match": "(?:(?:\\$if)|(?:\\$else))",
+          "name": "keyword.control.v"
+        },
+        {
+          "match": "(?<!\\w)(?:(?:as)|(?:it)|(?:is)|(?:in)|(?:or)|(?:break)|(?:continue)|(?:default)|(?:unsafe)|(?:match)|(?:if)|(?:else)|(?:for)|(?:go)|(?:goto)|(?:defer)|(?:return)|(?:shared)|(?:select)|(?:rlock)|(?:lock)|(?:atomic)|(?:asm))(?!\\w)",
+          "name": "keyword.control.v"
+        },
+        {
+          "match": "(?<!\\w)(?:(?:fn)|(?:type)|(?:typeof)|(?:enum)|(?:struct)|(?:interface)|(?:map)|(?:assert)|(?:sizeof)|(?:__offsetof))(?!\\w)",
+          "name": "keyword.$0.v"
+        }
+      ]
     },
     "module_decl": {
       "begin": "^(?:(?:\\s)+)?(module)(?:\\s)+",
@@ -215,6 +275,38 @@
           "name": "keyword.operator.optional.v"
         }
       ]
+    },
+    "punctuation": {
+      "patterns": [
+        {
+          "match": "\\.",
+          "name": "punctuation.delimiter.period.dot.v"
+        },
+        {
+          "match": ",",
+          "name": "punctuation.delimiter.comma.v"
+        },
+        {
+          "match": ":",
+          "name": "punctuation.separator.key-value.colon.v"
+        },
+        {
+          "match": ";",
+          "name": "punctuation.definition.other.semicolon.v"
+        },
+        {
+          "match": "\\?",
+          "name": "punctuation.definition.other.questionmark.v"
+        },
+        {
+          "match": "#",
+          "name": "punctuation.hash.v"
+        }
+      ]
+    },
+    "storage": {
+      "match": "(?<!\\w)(?:(?:const)|(?:mut)|(?:pub))(?!\\w)",
+      "name": "storage.modifier.v"
     }
   }
 }

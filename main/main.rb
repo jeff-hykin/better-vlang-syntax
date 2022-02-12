@@ -86,6 +86,18 @@ grammar = Grammar.new(
     grammar.import(PathFor[:pattern]["operators"])
     # grammar.import(PathFor[:pattern]["string"])
     # grammar.import(PathFor[:pattern]["numeric_literal"])
+
+# 
+# lists
+# 
+    special_keywords          = [ "fn", "type", "typeof", "enum", "struct", "interface", "map", "assert", "sizeof", "__offsetof", ]
+    normal_control_words      = [ "as", "it", "is", "in", "or", "break", "continue", "default", "unsafe", "match", "if", "else", "for", "go", "goto", "defer", "return", "shared", "select", "rlock", "lock", "atomic", "asm", ]
+    special_control_words     = [ "$if", "$else" ]
+    storage_attributes        = [ "deprecated", "unsafe_fn", "console", "heap", "debug", "manualfree", "typedef", "live", "inline", "flag", "ref_only", "windows_stdcall", "direct_array_access", ]
+    storage_modifiers         = [ "const", "mut", "pub" ]
+    non_numeric_storage_types = [ "bool", "byte", "byteptr", "charptr", "voidptr", "string", "ustring", "rune" ]
+    numeric_storage_types     = [ "int", "i8", "i16", "i64", "i128", "u8", "u16", "u32", "u64", "u128", "f32", "f64", ]
+    constants                 = ["true", "false", "none"]
     
 # 
 # basic patterns
@@ -146,21 +158,7 @@ grammar = Grammar.new(
                         match: "["
                     ).then(
                         tag_as: "storage.modifier.attribute",
-                        match: oneOf([
-                            "deprecated",
-                            "unsafe_fn",
-                            "console",
-                            "heap",
-                            "debug",
-                            "manualfree",
-                            "typedef",
-                            "live",
-                            "inline",
-                            "flag",
-                            "ref_only",
-                            "windows_stdcall",
-                            "direct_array_access",
-                        ]),
+                        match: oneOf(storage_attributes),
                     ).then(
                         tag_as: "punctuation.definition.end.bracket.square",
                         match: "]",
@@ -257,15 +255,15 @@ grammar = Grammar.new(
         ),
         Pattern.new(
             tag_as: "keyword.$match",
-            match: variableBounds[/fn|type|enum|struct|union|interface|map|assert|sizeof|typeof|__offsetof/].lookAheadFor(/\s*\(/),
+            match: variableBounds[oneOf(special_keywords)].lookAheadFor(/\s*\(/),
         ),
         Pattern.new(
             tag_as: "keyword.control",
-            match: oneOf([ "$if", "$else" ]).lookAheadFor(/\s*\(/),
+            match: oneOf(special_control_words).lookAheadFor(/\s*\(/),
         ),
         Pattern.new(
             tag_as: "keyword.control",
-            match: variableBounds[/as|in|is|or|break|continue|default|unsafe|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm/].lookAheadFor(/\s*\(/),
+            match: variableBounds[oneOf(normal_control_words)].lookAheadFor(/\s*\(/),
         ),
         Pattern.new(
             tag_as: "meta.expr.numeric.cast storage.type.numeric",
@@ -280,14 +278,76 @@ grammar = Grammar.new(
     
     grammar[:escaped_fix] = Pattern.new(
         tag_as: "meta.escaped.keyword keyword.other.escaped",
+        # TODO: this needs to be cleaned up using variables and a oneOf([]) call
         match: /(?:@)(?:mut|pub|fn|unsafe|module|import|as|const|map|assert|sizeof|__offsetof|typeof|type|struct|interface|enum|in|is|or|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm|i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)|bool|byte|byteptr|charptr|voidptr|string|ustring|rune)/,
     )
     
     grammar[:constants] = Pattern.new(
         tag_as: "constant.language",
-        match: variableBounds[oneOf("true", "false", "none")],
+        match: variableBounds[oneOf(constants)],
+    )
+    
+    grammar[:punctuation] = [
+        Pattern.new(
+            tag_as: "punctuation.delimiter.period.dot",
+            match: /\./,
+        ),
+        Pattern.new(
+            tag_as: "punctuation.delimiter.comma",
+            match: /,/,
+        ),
+        Pattern.new(
+            tag_as: "punctuation.separator.key-value.colon",
+            match: /:/,
+        ),
+        Pattern.new(
+            tag_as: "punctuation.definition.other.semicolon",
+            match: /;/,
+        ),
+        Pattern.new(
+            tag_as: "punctuation.definition.other.questionmark",
+            match: /\?/,
+        ),
+        Pattern.new(
+            tag_as: "punctuation.hash",
+            match: /#/,
+        )
+    ]
+
+    grammar[:keywords] = [
+        Pattern.new(
+            tag_as: "keyword.control",
+            match: oneOf(special_control_words),
+        ),
+        Pattern.new(
+            tag_as: "keyword.control",
+            match: variableBounds[
+                oneOf(normal_control_words)
+            ],
+        ),
+        Pattern.new(
+            tag_as: "keyword.$match",
+            match: variableBounds[
+                oneOf(special_keywords)
+            ],
+        ),
+    ]
+    
+    grammar[:storage] = Pattern.new(
+        tag_as: "storage.modifier",
+        match: variableBounds[oneOf(storage_modifiers)],
     )
 
+    grammar[:types] = [
+        Pattern.new(
+            tag_as: "storage.type.numeric",
+            match: lookBehindToAvoid(/\./).then(variableBounds[oneOf(numeric_storage_types)]),
+        ),
+        Pattern.new(
+            tag_as: "storage.type.$match",
+            match: lookBehindToAvoid(/\./).then(variableBounds[oneOf(non_numeric_storage_types)]),
+        )
+    ]
 #
 # Save
 #
