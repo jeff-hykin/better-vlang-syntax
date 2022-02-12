@@ -1,0 +1,9 @@
+entity.name.alias.v
+keyword.$1.v
+keyword.operator.arithmetic.v
+keyword.operator.assignment.v
+keyword.operator.bitwise.v
+keyword.operator.logical.v
+keyword.operator.optional.v
+keyword.operator.relation.v
+meta.definition.variable.v
