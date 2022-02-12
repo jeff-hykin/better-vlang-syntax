@@ -1,56 +1,3 @@
-grammar[:attributes] = Pattern.new(
-    tag_as: "meta.definition.attribute",
-    match: /^\s*((\[)(deprecated|unsafe_fn|console|heap|debug|manualfree|typedef|live|inline|flag|ref_only|windows_stdcall|direct_array_access)(\]))/,
-    "captures": {
-        "1": {
-            tag_as: "meta.function.attribute",
-        },
-        "2": {
-            tag_as: "punctuation.definition.begin.bracket.square",
-        },
-        "3": {
-            tag_as: "storage.modifier.attribute",
-        },
-        "4": {
-            tag_as: "punctuation.definition.end.bracket.square",
-        }
-    }
-)
-grammar[:module_decl] = Pattern.new(
-    tag_as: "meta.module",
-    start_pattern: /^\s*(module)\s+/,
-    "beginCaptures": {
-        "1": {
-            tag_as: "keyword.module",
-        }
-    },
-    end_pattern: /([\w.]+)/,
-    "endCaptures": {
-        "1": {
-            tag_as: "entity.name.module",
-        }
-    }
-)
-grammar[:import_decl] = Pattern.new(
-    tag_as: "meta.import",
-    start_pattern: /^\s*(import)\s+/,
-    "beginCaptures": {
-        "1": {
-            tag_as: "keyword.import",
-        }
-    },
-    end_pattern: /([\w.]+)/,
-    "endCaptures": {
-        "1": {
-            tag_as: "entity.name.import",
-        }
-    }
-)
-grammar[:hash_decl] = Pattern.new(
-    tag_as: "markup.bold",
-    start_pattern: /^\s*(#)/,
-    end_pattern: "$"
-)
 grammar[:brackets] = Pattern.new(
     includes: [
         {
@@ -228,7 +175,7 @@ grammar[:generic] = Pattern.new(
         }
     ]
 )
-grammar[:function_decl] = Pattern.new(
+grammar[:function_decl] = Pattern.newRange(
     tag_as: "meta.definition.function",
     start_pattern: /^\s*(pub)?\s*(fn)\s+/,
     "beginCaptures": {

@@ -145,6 +145,33 @@ grammar = Grammar.new(
         )
     )
 
+grammar[:module_decl] = PatternRange.new(
+    tag_as: "meta.module",
+    start_pattern: Pattern.new(
+        @start_of_line.maybe(@spaces).then(
+            tag_as: "keyword.module",
+            match: /module/,
+        ).then(@spaces)
+    ),
+    end_pattern: Pattern.new(
+        tag_as: "entity.name.module",
+        match: /[\w.]+/,
+    ),
+)
+
+grammar[:import_decl] = PatternRange.new(
+    tag_as: "meta.import",
+    start_pattern: Pattern.new(
+        @start_of_line.maybe(@spaces).then(
+            tag_as: "keyword.import",
+            match: /import/,
+        ).then(@spaces)
+    ),
+    end_pattern: Pattern.new(
+        tag_as: "entity.name.import",
+        match: /[\w.]+/,
+    ),
+)
 
 
 #
