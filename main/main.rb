@@ -11,9 +11,9 @@ require_relative './tokens.rb'
 # 
 grammar = Grammar.new(
     name: "V",
-    scope_name: "source.v",
+    scope_name: "source",
     fileTypes: [
-        ".v",
+        "",
 		".vh",
 		".vsh",
 		".vv",
@@ -60,6 +60,19 @@ grammar = Grammar.new(
 # 
 # Helpers
 # 
+    # @space
+    # @spaces
+    # @digit
+    # @digits
+    # @standard_character
+    # @word
+    # @word_boundary
+    # @white_space_start_boundary
+    # @white_space_end_boundary
+    # @start_of_document
+    # @end_of_document
+    # @start_of_line
+    # @end_of_line
     part_of_a_variable = /[a-zA-Z_][a-zA-Z_0-9]*/
     # this is really useful for keywords. eg: variableBounds[/new/] wont match "newThing" or "thingnew"
     variableBounds = ->(regex_pattern) do
@@ -95,6 +108,41 @@ grammar = Grammar.new(
         match: Pattern.new(
             @spaces.then(grammar[:assignment_operator]).then(@spaces)
         ),
+    )
+    
+    grammar[:attributes] = Pattern.new(
+        tag_as: "meta.definition.attribute",
+        match: Pattern.new(
+            @start_of_line.maybe(@spaces).then(
+                tag_as: "meta.function.attribute",
+                match: Pattern.new(
+                    Pattern.new(
+                        tag_as: "punctuation.definition.begin.bracket.square",
+                        match: "["
+                    ).then(
+                        tag_as: "storage.modifier.attribute",
+                        match: oneOf([
+                            "deprecated"
+                            "unsafe_fn",
+                            "console",
+                            "heap",
+                            "debug",
+                            "manualfree",
+                            "typedef",
+                            "live",
+                            "inline",
+                            "flag",
+                            "ref_only",
+                            "windows_stdcall",
+                            "direct_array_access",
+                        ]),
+                    ).then(
+                        tag_as: "punctuation.definition.end.bracket.square",
+                        match: "]",
+                    )
+                ),
+            )
+        )
     )
 
 
