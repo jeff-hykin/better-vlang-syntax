@@ -13,7 +13,7 @@ grammar = Grammar.new(
     name: "V",
     scope_name: "source.v",
     fileTypes: [
-        "",
+		".v",
 		".vh",
 		".vsh",
 		".vv",
