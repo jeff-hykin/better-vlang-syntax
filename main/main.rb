@@ -90,6 +90,31 @@ grammar = Grammar.new(
 # 
 # basic patterns
 # 
+    grammar[:comments] = [
+        PatternRange.new(
+            tag_as: "comment.block.documentation",
+            start_pattern: Pattern.new(
+                match: "/*",
+                tag_as: "punctuation.definition.comment.begin",
+            ),
+            end_pattern: Pattern.new(
+                match: "*/",
+                tag_as: "punctuation.definition.comment.end",
+            ),
+            includes: [
+                :comments,
+            ]
+        ),
+        PatternRange.new(
+            tag_as: "comment.line.double-slash",
+            start_pattern: Pattern.new(
+                match: "//",
+                tag_as: "punctuation.definition.comment.begin",
+            ),
+            end_pattern: @end_of_line,
+        )
+    ]
+    
     grammar[:as_is] = PatternRange.new(
         start_pattern: Pattern.new(
             @spaces.then(
@@ -248,9 +273,20 @@ grammar = Grammar.new(
         ),
         Pattern.new(
             tag_as: "meta.expr.bool.cast storage.type.$match",
-            match: variableBounds[/bool|byte|byteptr|charptr|voidptr|string|rune|size_t/].lookAheadFor(/\s*\(/),
+            # NOTE: not sure if this should get variableBounds[] or maybe \b
+            match: Pattern.new(/bool|byte|byteptr|charptr|voidptr|string|rune|size_t/).lookAheadFor(/\s*\(/),
         ),
     ]
+    
+    grammar[:escaped_fix] = Pattern.new(
+        tag_as: "meta.escaped.keyword keyword.other.escaped",
+        match: /(?:@)(?:mut|pub|fn|unsafe|module|import|as|const|map|assert|sizeof|__offsetof|typeof|type|struct|interface|enum|in|is|or|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm|i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)|bool|byte|byteptr|charptr|voidptr|string|ustring|rune)/,
+    )
+    
+    grammar[:constants] = Pattern.new(
+        tag_as: "constant.language",
+        match: variableBounds[oneOf("true", "false", "none")],
+    )
 
 #
 # Save

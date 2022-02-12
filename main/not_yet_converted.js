@@ -1,15 +1,6 @@
-grammar[:escaped_fix] = Pattern.new(
-    tag_as: "meta.escaped.keyword",
-    match: /((?:@)(?:mut|pub|fn|unsafe|module|import|as|const|map|assert|sizeof|__offsetof|typeof|type|struct|interface|enum|in|is|or|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm|i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)|bool|byte|byteptr|charptr|voidptr|string|ustring|rune))/,
-    "captures": {
-        "0": {
-            tag_as: "keyword.other.escaped",
-        }
-    }
-)
 grammar[:comments] = Pattern.new(
     includes: [
-        {
+        PatternRange.new(
             tag_as: "comment.block.documentation",
             start_pattern: Pattern.new(
                 match: //\*/,
@@ -22,15 +13,15 @@ grammar[:comments] = Pattern.new(
             includes: [
                 :comments,
             ]
-        },
-        {
+        ),
+        PatternRange.new(
             tag_as: "comment.line.double-slash",
             start_pattern: Pattern.new(
                 match: ////,
                 tag_as: "punctuation.definition.comment.begin",
             ),
-            end_pattern: "$"
-        }
+            end_pattern: @end_of_line,
+        )
     ]
 )
 grammar[:constants] = Pattern.new(
