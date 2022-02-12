@@ -1,0 +1,1542 @@
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Copyright (c) 2019-2022 Alexander Medvednikov. All rights reserved.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Use of this source code is governed by an MIT license'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' that can be found in the LICENSE file.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: enum
+  scopes:
+    - keyword.enum
+- source: ' FileType '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tregular"
+- source: "\tdirectory"
+- source: "\tcharacter_device"
+- source: "\tblock_device"
+- source: "\tfifo"
+- source: "\tsymbolic_link"
+- source: "\tsocket"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' FilePermission '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: pub
+  scopes:
+    - storage.modifier
+- source: ':'
+- source: "\tread    "
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: "\twrite   "
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: "\texecute "
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' bitmask returns a 3 bit sequence in the order RWE where'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the bit is set to 1 if the value is true or 0 otherwise.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p FilePermission
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' bitmask'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' mask'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'read '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tmask"
+- source: '|='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '4'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'write '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tmask"
+- source: '|='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'execute '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tmask"
+- source: '|='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' mask'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' FileMode '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: pub
+  scopes:
+    - storage.modifier
+- source: ':'
+- source: "\ttyp    FileType"
+- source: "\towner  FilePermission"
+- source: "\tgroup  FilePermission"
+- source: "\tothers FilePermission"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' bitmask returns a 9 bit sequence in the order owner + group + others.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' This is a valid bitmask to use with `os.chmod`.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: m FileMode
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' bitmask'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' m'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: owner
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: bitmask
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: '6'
+  scopes:
+    - constant.numeric.integer
+- source: '|'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' m'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: group
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: bitmask
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: '|'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' m'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: others
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: bitmask
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' inode returns the mode of the file/inode containing inode type and permission information'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' it supports windows for regular files but it doesn''t matter if you use owner, group or others when checking permissions on windows'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' inode'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' FileMode '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' attr'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stat
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stat
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: attr
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' typ'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: FileType
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: regular
+- source: if
+  scopes:
+    - keyword.control
+- source: ' attr'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFMT
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFDIR
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\ttyp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: directory
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: 'windows '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' attr'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFMT
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFCHR
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\ttyp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: character_device
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopesBegin:
+    - keyword.control
+- source: if
+  scopesEnd:
+    - keyword.control
+- source: ' attr'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFMT
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFBLK
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\ttyp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: block_device
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopesBegin:
+    - keyword.control
+- source: if
+  scopesEnd:
+    - keyword.control
+- source: ' attr'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFMT
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFIFO
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\ttyp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: fifo
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopesBegin:
+    - keyword.control
+- source: if
+  scopesEnd:
+    - keyword.control
+- source: ' attr'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFMT
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFLNK
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\ttyp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: symbolic_link
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopesBegin:
+    - keyword.control
+- source: if
+  scopesEnd:
+    - keyword.control
+- source: ' attr'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFMT
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IFSOCK
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\ttyp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: socket
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' windows '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' FileMode'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\ttyp: typ"
+- source: "\t\t\towner: FilePermission"
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tread: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IREAD
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\twrite: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IWRITE
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\texecute: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IEXEC
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tgroup: FilePermission"
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tread: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IREAD
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\twrite: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IWRITE
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\texecute: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IEXEC
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tothers: FilePermission"
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tread: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IREAD
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\twrite: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IWRITE
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\texecute: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IEXEC
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: $else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' FileMode'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\ttyp: typ"
+- source: "\t\t\towner: FilePermission"
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tread: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IRUSR
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\twrite: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IWUSR
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\texecute: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IXUSR
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tgroup: FilePermission"
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tread: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IRGRP
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\twrite: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IWGRP
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\texecute: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IXGRP
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tothers: FilePermission"
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tread: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IROTH
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\twrite: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IWOTH
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\t\texecute: "
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: attr
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'st_mode '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: S_IXOTH
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+- source: '}'

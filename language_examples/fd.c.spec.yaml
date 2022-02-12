@@ -1,0 +1,654 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' file descriptor based operations:'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' close filedescriptor'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' fd_close'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'fd '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' fd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: fd
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' fd_write'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'fd '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' s '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' fd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' sp'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' remaining'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: len
+- source: for
+  scopes:
+    - keyword.control
+- source: ' remaining '
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\twritten"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: fd
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' sp'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' remaining'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' written '
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tremaining"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 'remaining '
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' written'
+- source: "\t\tsp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' sp '
+- source: +
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' written '
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' read from filedescriptor, block until data'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' fd_slurp'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'fd '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' fd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' res'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: for
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\ts"
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' b'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: fd_read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: fd
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '4096'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' b '
+- source: <=
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: break
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tres "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' s'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' res'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' read from filedescriptor, don''t block'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' return [bytestring,nrbytes]'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' fd_read'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'fd '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' max'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: 's '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' fd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' '''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: malloc_noscan
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: max
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: 's '
+- source: +
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tn"
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: fd
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' buf'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' max'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: 's '
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tfree"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: buf
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' '''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tbuf"
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: 'n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: return
+  scopes:
+    - keyword.control
+- source: ' tos'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: buf
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'

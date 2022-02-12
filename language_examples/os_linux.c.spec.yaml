@@ -1,0 +1,119 @@
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Copyright (c) 2019-2022 Alexander Medvednikov. All rights reserved.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Use of this source code is governed by an MIT license'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' that can be found in the LICENSE file.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tprot_read"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: "\tprot_write"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: "\tmap_private"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x02'
+  scopes:
+    - constant.numeric.hex
+- source: "\tmap_anonymous"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x20'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: pub
+  scopesBegin:
+    - storage.modifier
+- source: const
+  scopesEnd:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tsys_write"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: "\tsys_open"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: "\tsys_close"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: "\tsys_mkdir"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '83'
+  scopes:
+    - constant.numeric.integer
+- source: "\tsys_creat"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '85'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end

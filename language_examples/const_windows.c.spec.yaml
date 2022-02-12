@@ -1,0 +1,1234 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Ref - winnt.h'
+  scopesEnd:
+    - comment.line.double-slash
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tsuccess"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' ERROR_SUCCESS'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\terror_insufficient_buffer"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0082'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\thandle_generic_read"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x80000000'
+  scopes:
+    - constant.numeric.hex
+- source: "\thandle_open_existing"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000003'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tfile_share_read"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x01'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_share_write"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x02'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_share_delete"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x04'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tfile_notify_change_file_name"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x01'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_notify_change_dir_name"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x02'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_notify_change_attributes"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x04'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_notify_change_size"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x08'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_notify_change_last_write"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x10'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_notify_change_last_access"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x20'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_notify_change_creation"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x40'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_notify_change_security"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x80'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tfile_action_added"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x01'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_action_removed"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x02'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_action_modified"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x03'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_action_renamed_old_name"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x04'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_action_renamed_new_name"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x05'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tfile_attr_readonly"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000001'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_hidden"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000002'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_system"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000004'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_directory"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000010'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_archive"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000020'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_device"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000040'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_normal"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000080'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_temporary"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000100'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_sparse_file"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000200'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_reparse_point"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000400'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_compressed"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00000800'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_offline"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00001000'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_not_content_indexed"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00002000'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_encrypted"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00004000'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_integrity_stream"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00008000'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_virtual"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00010000'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_attr_no_scrub_data"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00020000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' file_attr_recall_on_open        = u32(0x...)'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' file_attr_recall_on_data_access = u32(0x...)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tfile_type_unknown"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x00'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_type_disk"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x01'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_type_char"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x02'
+  scopes:
+    - constant.numeric.hex
+- source: "\tfile_type_pipe"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x03'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tfile_invalid_file_id"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tinvalid_handle_value"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' https://docs.microsoft.com/en-us/windows/console/setconsolemode'
+  scopesEnd:
+    - comment.line.double-slash
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Input Buffer'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tenable_echo_input"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0004'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_extended_flags"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0080'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_insert_mode"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0020'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_line_input"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0002'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_mouse_input"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0010'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_processed_input"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0001'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_quick_edit_mode"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0040'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_window_input"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0008'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_virtual_terminal_input"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0200'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Output Screen Buffer'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tenable_processed_output"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x01'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_wrap_at_eol_output"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x02'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_virtual_terminal_processing"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x04'
+  scopes:
+    - constant.numeric.hex
+- source: "\tdisable_newline_auto_return"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x08'
+  scopes:
+    - constant.numeric.hex
+- source: "\tenable_lvb_grid_worldwide"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x10'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' File modes'
+  scopesEnd:
+    - comment.line.double-slash
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\to_rdonly"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open the file read-only.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_wronly"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0001'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open the file write-only.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_rdwr"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0002'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open the file read-write.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_append"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0008'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' append data to the file when writing.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_create"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0100'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' create a new file if none exists.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_binary"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x8000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' input and output is not translated.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_trunc"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0200'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' truncate regular writable file when opened.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_excl"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0400'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' used with o_create, file must not exist.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_sync"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open for synchronous I/O (ignored on Windows)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_noctty"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' make file non-controlling tty (ignored on Windows)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_nonblock"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' don''t block on opening file (ignored on Windows)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tstatus_access_violation"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000005'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_in_page_error"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000006'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_invalid_handle"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000008'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_invalid_parameter"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC000000D'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_no_memory"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000017'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_illegal_instruction"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC000001D'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_noncontinuable_exception"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000025'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_invalid_disposition"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000026'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_array_bounds_exceeded"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC000008C'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_denormal_operand"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC000008D'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_divide_by_zero"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC000008E'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_inexact_result"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC000008F'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_invalid_operation"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000090'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_overflow"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000091'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_stack_check"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000092'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_underflow"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000093'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_integer_divide_by_zero"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000094'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_integer_overflow"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000095'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_privileged_instruction"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000096'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_stack_overflow"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC00000FD'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_dll_not_found"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000135'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_ordinal_not_found"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000138'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_entrypoint_not_found"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000139'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_control_c_exit"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC000013A'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_dll_init_failed"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000142'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_multiple_faults"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC00002B4'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_float_multiple_traps"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC00002B5'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_reg_nat_consumption"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC00002C9'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_heap_corruption"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000374'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_stack_buffer_overrun"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000409'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_invalid_cruntime_parameter"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000417'
+  scopes:
+    - constant.numeric.hex
+- source: "\tstatus_assertion_failure"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xC0000420'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Windows Registry Constants'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopesBegin:
+    - storage.modifier
+- source: const
+  scopesEnd:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\thkey_local_machine"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '0x80000002'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\thkey_current_user"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '0x80000001'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tkey_query_value"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0001'
+  scopes:
+    - constant.numeric.hex
+- source: "\tkey_set_value"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0002'
+  scopes:
+    - constant.numeric.hex
+- source: "\tkey_enumerate_sub_keys"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0008'
+  scopes:
+    - constant.numeric.hex
+- source: "\tkey_wow"
+- source: '64_32'
+  scopes:
+    - constant.numeric.integer
+- source: key
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0200'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Windows Messages'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopesBegin:
+    - storage.modifier
+- source: const
+  scopesEnd:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\thwnd_broadcast"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '0xFFFF'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\twm_settingchange"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x001A'
+  scopes:
+    - constant.numeric.hex
+- source: "\tsmto_abortifhung"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x0002'
+  scopes:
+    - constant.numeric.hex
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end

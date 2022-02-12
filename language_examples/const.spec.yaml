@@ -1,0 +1,8 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module

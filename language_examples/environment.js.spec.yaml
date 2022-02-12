@@ -1,0 +1,350 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' js_node '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: global.$ENV = $process.env
+  scopesEnd:
+    - markup.bold
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: const global = $global;
+- source: "\t#"
+- source: 'global.$ENV = {}'
+  scopesEnd:
+    - markup.bold
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' setenv sets the value of an environment variable with `name` to `value`.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' setenv'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'key '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' val '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' overwrite '
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: 'if ($ENV[key] && !(overwrite.valueOf())) return;'
+- source: "\t#"
+- source: '$ENV[key] = val + '''';'
+  scopesEnd:
+    - markup.bold
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' `getenv` returns the value of the environment variable named by the key.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' getenv'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'key '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''''''
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: 'if ($ENV[key]) res = new string($ENV[key])'
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: ' res'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' `getenv_opt` returns the value of the environment variable named by the key.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' If such an environment variable does not exist, then it returns `none`.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' getenv_opt'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'key '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: 'if (!$ENV[key]) return none__;'
+  scopesEnd:
+    - markup.bold
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''''''
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: 'if ($ENV[key]) res = new string($ENV[key]);'
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: ' res'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' unsetenv clears an environment variable with `name`.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' unsetenv'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'name '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: '$ENV[name] = ""'
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' environ'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: map
+  scopes:
+    - keyword.map
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: map
+  scopes:
+    - keyword.map
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: 'for (const key in $ENV) {'
+- source: "\t#"
+- source: 'res.map.set(key,$ENV[key])'
+- source: "\t#"
+- source: '}'
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: ' res'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

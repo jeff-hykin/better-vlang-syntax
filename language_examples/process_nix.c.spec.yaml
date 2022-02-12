@@ -1,0 +1,1875 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setpgid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'pid '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' pgid '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' unix_spawn_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' pipeset'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '6'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'use_stdio_ctl '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' dont_care'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pipe
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' pipe read end 0 <- 1 pipe write end'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\tdont_care"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pipe
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' pipe read end 2 <- 3 pipe write end'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\tdont_care"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pipe
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '4'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' pipe read end 4 <- 5 pipe write end'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\t_"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 'dont_care '
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' using `_` directly on each above `pipe` fails to avoid C compiler generate an `-Wunused-result` warning'
+  scopesEnd:
+    - comment.line.double-slash
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tpid"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: fork
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' pid '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' This is the parent process after the fork.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' NB: pid contains the process ID of the child process'
+  scopesEnd:
+    - comment.line.double-slash
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'use_stdio_ctl '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stdio_fd
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' store the write end of child''s in'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stdio_fd
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' store the read end of child''s out'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stdio_fd
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '4'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' store the read end of child''s err'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' close the rest of the pipe fds, the parent does not need them'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' pid'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: //
+  scopesEnd:
+    - punctuation.definition.comment.begin
+- source: ' Here, we are in the child process.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' It still shares file descriptors with the parent process,'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' but it is otherwise independant and can do stuff *without*'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' affecting the parent process.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+  scopesEnd:
+    - comment.line.double-slash
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'use_pgroup '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setpgid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'use_stdio_ctl '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Redirect the child standart in/out/err to the pipes that'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' were created in the parent.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Close the parent''s pipe fds, the child do not need them:'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '4'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' redirect the pipe fds to the child''s in/out/err fds:'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: dup
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: dup
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: dup
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' close the pipe fdsx after the redirection'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tfd_close"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pipeset
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\texecve"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: filename
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: args
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: env
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: err
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\texit"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' unix_stop_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: kill
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pid
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: SIGSTOP
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' unix_resume_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: kill
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pid
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: SIGCONT
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' unix_kill_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: kill
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pid
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: SIGKILL
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' unix_kill_pgroup'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: kill
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pid
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: SIGKILL
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' unix_wait'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tcstatus"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\tret"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: waitpid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pid
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: cstatus
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' ret '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: err
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: posix_get_error_msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: errno
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tpret"
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' is_signaled'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: posix_wait
+- source: 4_
+  scopes:
+    - constant.numeric.integer
+- source: to_exit_status
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: cstatus
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' is_signaled '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: status
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: aborted
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: err
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '''Terminated by signal $'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'ret:'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: d
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: $
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: sigint_to_signal_name
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pret
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: status
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exited
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: code
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pret
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' unix_is_alive'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tcstatus"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\tret"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: waitpid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pid
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: cstatus
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: WNOHANG
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' ret '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: err
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: posix_get_error_msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: errno
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' ret '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tpret"
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' is_signaled'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: posix_wait
+- source: 4_
+  scopes:
+    - constant.numeric.integer
+- source: to_exit_status
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: cstatus
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' is_signaled '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: status
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: aborted
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: err
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '''Terminated by signal $'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'ret:'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: d
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: $
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: sigint_to_signal_name
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pret
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: status
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exited
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: code
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pret
+- source: return
+  scopes:
+    - keyword.control
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' these are here to make v_win.c/v.c generation work in all cases:'
+  scopesEnd:
+    - comment.line.double-slash
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_spawn_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_stop_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_resume_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_kill_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_kill_pgroup'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_wait'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_is_alive'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_write_'
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'idx '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' s '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_read_'
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'idx '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' max'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: 's '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' '''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' win_slurp'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'idx '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' '''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

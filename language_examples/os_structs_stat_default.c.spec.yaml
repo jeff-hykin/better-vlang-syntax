@@ -1,0 +1,65 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'stat '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tst_size  "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: "\tst_mode  "
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: "\tst_mtime "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: __stat
+- source: '64'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tst_size  "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: "\tst_mode  "
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: "\tst_mtime "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

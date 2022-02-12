@@ -1,0 +1,1235 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: pub
+  scopes:
+    - storage.modifier
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' File '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: pub
+  scopes:
+    - storage.modifier
+- source: ':'
+- source: "\tfd "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: pub
+  scopesBegin:
+    - storage.modifier
+- source: mut
+  scopesEnd:
+    - storage.modifier
+- source: ':'
+- source: "\tis_opened "
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: 'js_browser '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: const $buffer = require('buffer');
+  scopesEnd:
+    - markup.bold
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' todo(playX):   __as_cast is broken here'
+  scopesEnd:
+    - comment.line.double-slash
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: 'pub struct ErrFileNotOpened {'
+- source: "\tmsg  string = 'os: file not opened'"
+- source: "\tcode int"
+- source: '}'
+- source: 'pub struct ErrSizeOfTypeIs0 {'
+- source: "\tmsg  string = 'os: size of type is 0'"
+- source: "\tcode int"
+- source: '}'
+- source: 'fn error_file_not_opened() IError {'
+- source: "\treturn IError(&ErrFileNotOpened{})"
+- source: '}'
+- source: 'fn error_size_of_type_0() IError {'
+- source: "\treturn IError(&ErrSizeOfTypeIs0{})"
+- source: '}'
+- source: '*/'
+  scopes:
+    - punctuation.definition.comment.end
+  scopesEnd:
+    - comment.block.documentation
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' open_file'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' mode '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' options '
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: int
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: 'File '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: File
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' js_node '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t#"
+  scopesBegin:
+    - markup.bold
+- source: 'if (!options) { options = new array([]); }'
+- source: "\t\t#"
+- source: let permissions = 0o666
+- source: "\t\t#"
+- source: 'if (options.arr.length > 0) { permissions = options.arr[0]; }'
+- source: "\t\t#"
+- source: 'try {'
+- source: "\t\t#"
+- source: 'res.fd = new int($fs.openSync(''''+path,''''+mode,permissions))'
+- source: "\t\t#"
+- source: '} catch (e) {'
+- source: "\t\t#"
+- source: return error(new string('' + e));
+- source: "\t\t#"
+- source: '}'
+  scopesEnd:
+    - markup.bold
+- source: "\t\tres"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: is_opened
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\terror"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''cannot open file on non NodeJS runtime'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' res'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open tries to open a file for reading and returns back a read-only `File` object.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' open'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: 'File '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: return
+  scopes:
+    - keyword.control
+- source: ' f'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' create'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: 'File '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: return
+  scopes:
+    - keyword.control
+- source: ' f'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' stdin'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' File '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' File'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tfd: "
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\tis_opened: "
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' stdout'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' File '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' File'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tfd: "
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\tis_opened: "
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' stderr'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' File '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' File'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tfd: "
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\tis_opened: "
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'f '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: File
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' read'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf '
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' buf'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: 'try {'
+- source: "\t#"
+- source: let buffer = $fs.readFileSync(f.val.fd.valueOf());
+- source: "\t#"
+- source: "\t#"
+- source: 'for (const val of buffer.values()) { buf.arr[nbytes++] = val; }'
+- source: "\t#"
+- source: '}'
+- source: "\t#"
+- source: 'catch (e) { return error('''' + e); }'
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' write'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'buf '
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'is_opened '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''file'
+- source: is
+  scopes:
+    - keyword.is
+- source: not
+  scopes:
+    - entity.name.alias
+- source: ' opened'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: buf.arr.make_copy()
+- source: "\t#"
+- source: const b = $buffer.Buffer.from(buf.arr.arr.map((x) => x.valueOf()))
+- source: "\t#"
+- source: >-
+    try { $fs.writeSync(f.val.fd.valueOf(),b,0,buf.len.valueOf(),0); } catch (e)
+    { return error(new string('' + e)); }
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' writeln writes the string `s` into the file, and appends a \n character.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' It returns how many bytes were written, including the \n character.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' writeln'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 's '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tn"
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: +=
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''\n'''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: return
+  scopes:
+    - keyword.control
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' write_to'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'pos '
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' buf '
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'is_opened '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''file'
+- source: is
+  scopes:
+    - keyword.is
+- source: not
+  scopes:
+    - entity.name.alias
+- source: ' opened'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: buf.arr.make_copy()
+- source: "\t#"
+- source: const b = $buffer.Buffer.from(buf.arr.arr.map((x) => x.valueOf()))
+- source: "\t#"
+- source: >-
+    try { $fs.writeSync(f.val.fd.valueOf(),b,0,buf.len.valueOf(),pos.valueOf());
+    } catch (e) { return error(new string('' + e)); }
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' write_string writes the string `s` into the file'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' It returns how many bytes were actually written.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' write_'
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 's '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tn"
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: return
+  scopes:
+    - keyword.control
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' close'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: $fs.closeSync(f.valueOf().fd.valueOf())
+  scopesEnd:
+    - markup.bold
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' write_full_buffer'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 's '
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' buffer_len usize'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' write_array'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: buffer array
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'is_opened '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''file'
+- source: is
+  scopes:
+    - keyword.is
+- source: not
+  scopes:
+    - entity.name.alias
+- source: ' opened'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: buffer.arr.make_copy()
+- source: "\t#"
+- source: const b = $buffer.Buffer.from(buffer.arr.arr.map((x) => x.valueOf()))
+- source: "\t#"
+- source: >-
+    try { $fs.writeSync(f.val.fd.valueOf(),b,0,buffer.len.valueOf(),0); } catch
+    (e) { return error(new string('' + e)); }
+  scopesEnd:
+    - markup.bold
+- source: return
+  scopes:
+    - keyword.control
+- source: ' n'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

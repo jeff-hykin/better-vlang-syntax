@@ -1,0 +1,162 @@
+- source: import
+  scopesBegin:
+    - meta.import
+  scopes:
+    - keyword.import
+- source: os
+  scopes:
+    - entity.name.import
+  scopesEnd:
+    - meta.import
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' deep_glob'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: chdir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '@VMODROOT'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tmatches"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: glob
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''vlib'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: v
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '.v'') or { panic(err) }'
+- source: "\tassert matches.len > 10"
+- source: "\tassert 'vlib/v/ast/ast.v' in matches"
+- source: "\tassert 'vlib/v/ast/table.v' in matches"
+- source: "\tassert 'vlib/v/token/token.v' in matches"
+- source: "\tfor f in matches {"
+- source: "\t\tif !f.starts_with('vlib/v/') {"
+- source: "\t\t\tassert false"
+- source: "\t\t}"
+- source: "\t\tassert f.ends_with('.v')"
+- source: "\t}"
+- source: '}'
+- source: 'fn redeep_glob() ? {'
+- source: "\tos.chdir(@VMODROOT) ?"
+- source: "\tmatches := os.glob('vlib/v"
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '*/'
+  scopes:
+    - punctuation.definition.comment.end
+  scopesEnd:
+    - comment.block.documentation
+- source: '*.v'') or { panic(err) }'
+- source: "\tassert matches.len > 10"
+- source: "\tassert 'vlib/v/ast/ast.v' in matches"
+- source: "\tassert 'vlib/v/ast/table.v' in matches"
+- source: "\tassert 'vlib/v/token/token.v' in matches"
+- source: "\tfor f in matches {"
+- source: "\t\tif !f.starts_with('vlib/v/') {"
+- source: "\t\t\tassert false"
+- source: "\t\t}"
+- source: "\t\tassert f.ends_with('.v')"
+- source: "\t}"
+- source: '}'
+- source: 'fn test_glob_can_find_v_files_3_levels_deep() ? {'
+- source: "\t$if !windows {"
+- source: "\t\tdeep_glob() ?"
+- source: "\t\tredeep_glob() ?"
+- source: "\t}"
+- source: "\tassert true"
+- source: '}'
+- source: 'fn test_glob_can_find_files_in_current_folder() ? {'
+- source: "\tos.chdir(@VMODROOT) ?"
+- source: "\tmatches := os.glob('*') ?"
+- source: "\tassert '.gitignore' in matches"
+- source: "\tassert 'make.bat' in matches"
+- source: "\tassert 'Makefile' in matches"
+- source: "\tassert 'Dockerfile' in matches"
+- source: "\tassert 'README.md' in matches"
+- source: "\tassert 'v.mod' in matches"
+- source: "\tassert 'cmd/' in matches"
+- source: "\tassert 'vlib/' in matches"
+- source: "\tassert 'thirdparty/' in matches"
+- source: '}'
+- source: 'fn test_glob_can_be_used_with_multiple_patterns() ? {'
+- source: "\tos.chdir(@VMODROOT) ?"
+- source: "\tmatches := os.glob('*', 'cmd/tools"
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ''') ?'
+- source: "\tassert 'README.md' in matches"
+- source: "\tassert 'Makefile' in matches"
+- source: "\t$if !windows {"
+- source: "\t\tassert 'cmd/tools/test_if_v_test_system_works.v' in matches"
+- source: "\t}"
+- source: "\t$if windows {"
+- source: "\t\tassert 'test_if_v_test_system_works.v' in matches"
+- source: "\t}"
+- source: '}'
+- source: 'fn test_glob_star() ? {'
+- source: "\tos.chdir(@VMODROOT) ?"
+- source: "\tmatches := os.glob('*ake*') ?"
+- source: "\tassert 'Makefile' in matches"
+- source: "\tassert 'make.bat' in matches"
+- source: '}'
+- source: 'fn test_glob_not_found() ? {'
+- source: "\tos.glob('an_unknown_folder"
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '.v'') or {'
+- source: "\t\tassert true"
+- source: "\t\treturn"
+- source: "\t}"
+- source: '}'

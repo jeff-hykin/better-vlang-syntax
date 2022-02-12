@@ -1,0 +1,289 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' open_uri'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'uri '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' vopen_uri_cmd'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''VOPEN_URI_CMD'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' vopen_uri_cmd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' macos '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tvopen_uri_cmd"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '''open'''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $else
+  scopesBegin:
+    - keyword.control
+- source: $if
+  scopesEnd:
+    - keyword.control
+- source: ' freebsd '
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' openbsd '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tvopen_uri_cmd"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '''xdg'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: open'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $else
+  scopesBegin:
+    - keyword.control
+- source: $if
+  scopesEnd:
+    - keyword.control
+- source: ' linux '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tproviders"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '''xdg'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: open'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''x'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: www
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: browser'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''www'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: browser'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''wslview'''
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' There are multiple possible providers to open a browser on linux'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' One of them is xdg-open, another is x-www-browser, then there''s www-browser, etc.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Look for one that exists and run it'
+  scopesEnd:
+    - comment.line.double-slash
+- source: for
+  scopes:
+    - keyword.control
+- source: ' provider '
+- source: in
+  scopes:
+    - keyword.control
+- source: ' providers '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' exists_in_system_path'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: provider
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\t\tvopen_uri_cmd"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: provider
+- source: break
+  scopes:
+    - keyword.control
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' vopen_uri_cmd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''unsupported platform'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tresult"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: execute
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''$vopen_uri_cmd "$uri"'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' result'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'exit_code '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''unable to open url: $result'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: output'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'

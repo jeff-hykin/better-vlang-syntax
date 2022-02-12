@@ -1,0 +1,35 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'dirent '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\td_name "
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '256'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: char
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

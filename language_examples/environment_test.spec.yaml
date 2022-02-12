@@ -1,0 +1,812 @@
+- source: import
+  scopesBegin:
+    - meta.import
+  scopes:
+    - keyword.import
+- source: os
+  scopes:
+    - entity.name.import
+- source: import
+  scopes:
+    - keyword.import
+- source: time
+  scopes:
+    - entity.name.import
+  scopesEnd:
+    - meta.import
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_getenv'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' VEXE is set by the V builtin test runner'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''VEXE'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''PATH'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_getenv_opt'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv_opt
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''VEXE'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' '''' '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_setenv'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''bar'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'true'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'''
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' `setenv` should not set if `overwrite` is false'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''bar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'false'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'''
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' `setenv` should overwrite if `overwrite` is true'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''bar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'true'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv_opt
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' '''' '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_unsetenv'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''bar'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'true'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: unsetenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_environ'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''myvar'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''bar'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'true'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''myvar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''bar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'true'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''myvar'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''myvar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''myvar_not_defined'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''''
+- source: "\tall"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: environ
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' all'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '''myvar'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' all'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '''myvar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' all'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '''myvar_not_defined'''
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_setenv_var_not_exists'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tkey"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: time
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: new_time
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: time
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: now
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: unix
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo$key'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''bar'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'false'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''foo$key'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''bar'''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_getenv_empty_var'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tkey"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: time
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: new_time
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: time
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: now
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: unix
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: setenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''empty$key'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''""'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 'false'
+  scopes:
+    - constant.language
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''empty$key'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''""'''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

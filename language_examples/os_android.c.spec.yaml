@@ -1,0 +1,501 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'AAsset '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'AAssetManager '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'ANativeActivity '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tassetManager "
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAssetManager_open
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAssetManager
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset_getLength
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset_read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset_close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' read_apk_asset'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'file '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' apk '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tact"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ANativeActivity
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: sapp_android_get_native_activity
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' isnil'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: act
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''Could not get reference to Android activity'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tasset"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAssetManager_open
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAssetManager
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: act
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assetManager
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' file'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AASSET_MODE_STREAMING
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' isnil'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: asset
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''File `$file` not found'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tlen"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset_getLength
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: asset
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tbuf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: len'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: for
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset_read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: asset
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' buf'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: data
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' len'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: break
+  scopes:
+    - keyword.control
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: AAsset_close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: asset
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' buf'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '@FN '
+- source: +
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' '' can only be used with APK'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: AAB packaged Android apps'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'

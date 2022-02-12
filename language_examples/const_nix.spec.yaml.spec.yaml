@@ -1,0 +1,1595 @@
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: module'
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: module
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: module
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: os'
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' entity'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: name
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: module
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: module
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' File modes'''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: const
+  scopes:
+    - storage.modifier
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' storage'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: modifier
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: bracket
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: round
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_rdonly"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00000000
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' open the file read'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: only
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_wronly"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00000001
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' open the file write'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: only
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_rdwr"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00000002
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' open the file read'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: write
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_binary"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00000000
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' input and output'
+- source: is
+  scopes:
+    - keyword.is
+- source: not
+  scopes:
+    - entity.name.alias
+- source: ' translated; the '
+- source: default
+  scopes:
+    - keyword.control
+- source: ' on unix'''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_create"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00000100
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' create a new file '
+- source: if
+  scopes:
+    - keyword.control
+- source: none
+  scopes:
+    - constant.language
+- source: ' exists'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_excl"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00000200
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' used with o_create'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' file must not exist'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_noctty"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00000400
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' '
+- source: if
+  scopes:
+    - keyword.control
+- source: ' file'
+- source: is
+  scopes:
+    - keyword.is
+- source: terminal
+  scopes:
+    - entity.name.alias
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' don''''t make '
+- source: it
+  scopes:
+    - keyword.control
+- source: ' the controller terminal'''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_trunc"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00001000
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' truncate regular writable file when opened'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_append"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00002000
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' append data to the file when writing'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_nonblock"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o00004000
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' prevents blocking when opening files'''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: "\to_sync"'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '''
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: ''''
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' meta'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: variable
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' keyword'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: operator
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: 0o04010000
+  scopes:
+    - constant.numeric.octal
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' constant'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: numeric
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: '  scopesBegin:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: comment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '' open '
+- source: for
+  scopes:
+    - keyword.control
+- source: ' synchronous I'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: O
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: '  scopesEnd:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' comment'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: line
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: double
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: slash
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' source: '
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '  scopes:'
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' punctuation'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: definition
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: bracket
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: round
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: end

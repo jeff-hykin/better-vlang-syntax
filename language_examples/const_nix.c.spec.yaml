@@ -1,0 +1,203 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' File modes'
+  scopesEnd:
+    - comment.line.double-slash
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\to_rdonly"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00000000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open the file read-only.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_wronly"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00000001
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open the file write-only.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_rdwr"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00000002
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open the file read-write.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_binary"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00000000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' input and output is not translated; the default on unix'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_create"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00000100
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' create a new file if none exists.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_excl"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00000200
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' used with o_create, file must not exist.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_noctty"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00000400
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' if file is terminal, don''t make it the controller terminal'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_trunc"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00001000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' truncate regular writable file when opened.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_append"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00002000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' append data to the file when writing.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_nonblock"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o00004000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' prevents blocking when opening files'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\to_sync"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o04010000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' open for synchronous I/O.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end

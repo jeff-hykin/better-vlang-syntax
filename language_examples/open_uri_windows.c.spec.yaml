@@ -1,0 +1,338 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: import
+  scopesBegin:
+    - meta.import
+  scopes:
+    - keyword.import
+- source: dl
+  scopes:
+    - entity.name.import
+  scopesEnd:
+    - meta.import
+- source: type
+  scopes:
+    - keyword.type
+- source: ' ShellExecuteWin'
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u16
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u16
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u16
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u16
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' open_uri'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'uri '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' vopen_uri_cmd'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''VOPEN_URI_CMD'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' vopen_uri_cmd '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tresult"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: execute
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''$vopen_uri_cmd "$uri"'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' result'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'exit_code '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''unable to open url: $result'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: output'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\thandle"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: dl
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_opt
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''shell'
+- source: '32'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' dl'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: rtld_now
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' https://docs.microsoft.com/en-us/windows/win32/api/shellapi/nf-shellapi-shellexecutew'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tfunc"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ShellExecuteWin
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: dl
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: sym_opt
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: handle
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''ShellExecuteW'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tfunc"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'NULL'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''open'''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: to_wide
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' uri'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: to_wide
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'NULL'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'NULL'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: SW_SHOWNORMAL
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tdl"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: handle
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

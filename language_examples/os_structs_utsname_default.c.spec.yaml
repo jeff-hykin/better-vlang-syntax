@@ -1,0 +1,75 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'utsname '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ':'
+- source: "\tsysname  "
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: "\tnodename "
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: "\trelease  "
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: "\tversion  "
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: "\tmachine  "
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'utimbuf '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tactime  "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: "\tmodtime "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

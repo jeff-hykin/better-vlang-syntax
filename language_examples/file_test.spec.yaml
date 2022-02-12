@@ -1,0 +1,5065 @@
+- source: import
+  scopesBegin:
+    - meta.import
+  scopes:
+    - keyword.import
+- source: os
+  scopes:
+    - entity.name.import
+  scopesEnd:
+    - meta.import
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' Point '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tx "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\ty "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\tz "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' Extended_Point '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\ta "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\tb "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\tc "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\td "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\te "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\tf "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\tg "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\th "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: "\ti "
+- source: f64
+  scopes:
+    - storage.type.numeric
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: enum
+  scopes:
+    - keyword.enum
+- source: ' Color '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tred"
+- source: "\tgreen"
+- source: "\tblue"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: flag
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: enum
+  scopes:
+    - keyword.enum
+- source: ' Permissions '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tread"
+- source: "\twrite"
+- source: "\texecute"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tunit_point"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Point
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '1.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '1.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '1.0'
+  scopes:
+    - constant.numeric.float
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tanother_point"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Point
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '0.25'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '2.25'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '6.25'
+  scopes:
+    - constant.numeric.float
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\textended_point"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Extended_Point
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '1.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '2.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '4.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '5.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '6.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '7.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '8.0'
+  scopes:
+    - constant.numeric.float
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '9.0'
+  scopes:
+    - constant.numeric.float
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tanother_"
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '123'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tanother_color"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Color
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: red
+- source: "\tanother_permission"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Permissions
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'read '
+- source: '|'
+  scopes:
+    - keyword.operator.bitwise
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\ttfolder"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: join_path_single
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: temp_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''os_file_test'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\ttfile"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: join_path_single
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''test_file'''
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' testsuite_begin'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: rmdir_all
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: is_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: mkdir_all
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: chdir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: is_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' testsuite_end'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: chdir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: wd_at_startup
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: rmdir_all
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: is_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' test_read_bytes_into_newline_text tests reading text from a file with newlines.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' This test simulates reading a larger text file step by step into a buffer and'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' returning on each newline, even before the buffer is full, and reaching EOF before'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the buffer is completely filled.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline_text
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''Hello World'
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: \nGood\r morning
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: '
+- source: '8'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tn"
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '8'
+  scopes:
+    - constant.numeric.integer
+- source: "\tn"
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: "\tn"
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '8'
+  scopes:
+    - constant.numeric.integer
+- source: "\tn"
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '6'
+  scopes:
+    - constant.numeric.integer
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' test_read_bytes_into_newline_binary tests reading a binary file with NUL bytes.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' This test simulates the scenario when a byte stream is read and a newline byte'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' appears in that stream and an EOF occurs before the buffer is full.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline_binary
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: rm
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' FIXME This is a workaround for macos, because the file isn''t truncated when open with ''w'''
+  scopesEnd:
+    - comment.line.double-slash
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' bw'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: '
+- source: '15'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tbw"
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '9'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xff'
+  scopes:
+    - constant.numeric.hex
+- source: "\tbw"
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '12'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '10'
+  scopes:
+    - constant.numeric.integer
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' newline'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tn"
+- source: 0_
+  scopes:
+    - constant.numeric.integer
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: bw
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: '10'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: "\tn"
+- source: 1_
+  scopes:
+    - constant.numeric.integer
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: bw
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '10'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: '13'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: "\tn"
+- source: 2_
+  scopes:
+    - constant.numeric.integer
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: bw
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '13'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bw
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: '
+- source: '10'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tn"
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '10'
+  scopes:
+    - constant.numeric.integer
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' buf'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: 'n'
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' n'
+- source: 0_
+  scopes:
+    - constant.numeric.integer
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: "\tn"
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' buf'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: 'n'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' n'
+- source: 1_
+  scopes:
+    - constant.numeric.integer
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: "\tn"
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s_into_newline
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' buf'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: 'n'
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' n'
+- source: 2_
+  scopes:
+    - constant.numeric.integer
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' test_read_eof_last_read_partial_buffer_fill tests that when reading a file'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the end-of-file is detected and results in a none error being returned. This'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' test simulates file reading where the end-of-file is reached inside an fread'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' containing data.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_eof_last_read_partial_buffer_fill'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tbw"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: '
+- source: '199'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' init: '
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bw
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: '
+- source: '100'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read first 100 bytes of 199 byte file, should fill buffer with no error.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tn"
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '100'
+  scopes:
+    - constant.numeric.integer
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read remaining 99 bytes of 199 byte file, should fill buffer with no'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' error, even though end-of-file was reached.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tn"
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '99'
+  scopes:
+    - constant.numeric.integer
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read again, end-of-file was previously reached so should return none'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' error.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: if
+  scopes:
+    - keyword.control
+- source: ' _'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' This is not intended behavior because the read function should'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' not return a number of bytes read when end-of-file is reached.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Expect none to have been returned when end-of-file.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' err'
+- source: is
+  scopes:
+    - keyword.is
+- source: none
+  scopes:
+    - entity.name.alias
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' test_read_eof_last_read_full_buffer_fill tests that when reading a file the'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' end-of-file is detected and results in a none error being returned. This test'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' simulates file reading where the end-of-file is reached at the beinning of an'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' fread that returns no data.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_eof_last_read_full_buffer_fill'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tbw"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: '
+- source: '200'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' init: '
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bw
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: '
+- source: '100'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read first 100 bytes of 200 byte file, should fill buffer with no error.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tn"
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '100'
+  scopes:
+    - constant.numeric.integer
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read remaining 100 bytes of 200 byte file, should fill buffer with no'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' error. The end-of-file isn''t reached yet, but there is no more data.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tn"
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' n'
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '100'
+  scopes:
+    - constant.numeric.integer
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read again, end-of-file was previously reached so should return none'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' error.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: if
+  scopes:
+    - keyword.control
+- source: ' _'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' br'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' This is not intended behavior because the read function should'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' not return a number of bytes read when end-of-file is reached.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Expect none to have been returned when end-of-file.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' err'
+- source: is
+  scopes:
+    - keyword.is
+- source: none
+  scopes:
+    - entity.name.alias
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_write_struct'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: rm
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' FIXME This is a workaround for macos, because the file isn''t truncated when open with ''w'''
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tsize_of_point"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: int
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Point
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_struct
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tpcopy"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: memdup
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: another_point
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' size_of_point'
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\ty"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' pcopy'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _with_len
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: size_of_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' x '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' y'
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' debug '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: x
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'y'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_write_struct_at'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_struct
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: extended_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_struct_at
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Point
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_struct_at
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_point'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_struct'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_struct
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Point
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_struct
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_point'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_struct_at'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_struct
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Point
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_struct_at
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_point'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_write_raw'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: rm
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' FIXME This is a workaround for macos, because the file isn''t truncated when open with ''w'''
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tsize_of_point"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: int
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Point
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tpcopy"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: memdup
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: another_point
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' size_of_point'
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\ty"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' pcopy'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _with_len
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: size_of_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' x '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' y'
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' debug '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: x
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'y'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: s
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_write_raw_at'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: extended_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw_at
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Point
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_struct_at
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_point'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_write_raw_at_negative_pos'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: if
+  scopes:
+    - keyword.control
+- source: ' _'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw_at
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: assert
+  scopes:
+    - keyword.assert
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw_at
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '234'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' err'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''Invalid argument'' '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_raw'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_color
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_permission
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tp"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Point
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tb"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tc"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Color
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Permissions
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_point'
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' b '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' c '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_color'
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' x '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_permission'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_raw_at'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_color
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_permission
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' at'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: u64
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tp"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw_at
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Point
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: at
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tat"
+- source: +=
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tb"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw_at
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: at
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tat"
+- source: +=
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tc"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw_at
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Color
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: at
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tat"
+- source: +=
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Color
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw_at
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Permissions
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: at
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tat"
+- source: +=
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Permissions
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_point'
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' b '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' c '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_color'
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' x '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_permission'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_read_raw_at_negative_pos'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: if
+  scopes:
+    - keyword.control
+- source: ' _'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw_at
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Point
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: assert
+  scopes:
+    - keyword.assert
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw_at
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Point
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '234'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' err'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''Invalid argument'' '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_seek'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_color
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_raw
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: another_permission
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' println(''> ${sizeof(Point)} ${sizeof(byte)} ${sizeof(Color)} ${sizeof(Permissions)}'')'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tf"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: seek
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: i64
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Point
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: start
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' f'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tell
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Point
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tb"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' b '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_'
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: seek
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: i64
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: Color
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: current
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read_raw
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: Permissions
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' x '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' another_permission'
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_tell'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: for
+  scopes:
+    - keyword.control
+- source: ' size '
+- source: in
+  scopes:
+    - keyword.control
+- source: '10'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: '30'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\ts"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '''x'''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: repeat
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: size
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' s'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\t\tfs"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: file_size
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: int
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: fs
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' size'
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tfile
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''r'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\t\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: seek
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\t\tpos"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tell
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: "\t\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' dump(pos)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' pos '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' size '
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '5'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'

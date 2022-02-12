@@ -1,0 +1,6238 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: import
+  scopesBegin:
+    - meta.import
+  scopes:
+    - keyword.import
+- source: strings
+  scopes:
+    - entity.name.import
+  scopesEnd:
+    - meta.import
+- source: '#'
+  scopesBegin:
+    - markup.bold
+- source: include <dirent.h>
+- source: '#'
+- source: include <unistd.h>
+- source: '#'
+- source: include <fcntl.h>
+- source: '#'
+- source: include <sys/utsname.h>
+- source: '#'
+- source: include <sys/types.h>
+- source: '#'
+- source: include <utime.h>
+  scopesEnd:
+    - markup.bold
+- source: $if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: 'solaris '
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: 'haiku '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t#"
+  scopesBegin:
+    - markup.bold
+- source: include <sys/ptrace.h>
+  scopesEnd:
+    - markup.bold
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopesBegin:
+    - storage.modifier
+- source: const
+  scopesEnd:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tpath_separator"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''''
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''''
+- source: "\tpath_delimiter"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''':'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tstdin_value"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\tstdout_value"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: "\tstderr_value"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' (Must be realized in Syscall) (Must be specified)'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' ref: http://www.ccfit.nsu.ru/~deviv/courses/unix/unix/ng7c229.html'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopesBegin:
+    - storage.modifier
+- source: const
+  scopesEnd:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\ts_ifmt"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xF000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' type of file'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_ifdir"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0x4000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' directory'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_iflnk"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0xa000'
+  scopes:
+    - constant.numeric.hex
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' link'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_isuid"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o4000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' SUID'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_isgid"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o2000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' SGID'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_isvtx"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o1000
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Sticky'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_irusr"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0400
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read by owner'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_iwusr"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0200
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Write by owner'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_ixusr"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0100
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Execute by owner'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_irgrp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0040
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read by group'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_iwgrp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0020
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Write by group'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_ixgrp"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0010
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Execute by group'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_iroth"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0004
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Read by others'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_iwoth"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0002
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Write by others'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ts_ixoth"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 0o0001
+  scopes:
+    - constant.numeric.octal
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Execute by others'
+  scopesEnd:
+    - comment.line.double-slash
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: utime
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: uname
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'name '
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: symlink
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: link
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: gethostname
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' NB: not available on Android fn C.getlogin_r(&char, int) int'
+  scopesEnd:
+    - comment.line.double-slash
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getlogin
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getppid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getgid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getegid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ptrace
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: enum
+  scopes:
+    - keyword.enum
+- source: ' GlobMatch '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\texact"
+- source: "\tends_with"
+- source: "\tstarts_with"
+- source: "\tstart_and_ends_with"
+- source: "\tcontains"
+- source: "\tany"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' glob_match'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'dir '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' pattern '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' next_pattern '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' matches '
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' subdirs'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' is_file'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: dir
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' subdirs'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' files'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ls
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: dir
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' subdirs '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' mode'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: GlobMatch
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exact
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' pat'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pattern
+- source: if
+  scopes:
+    - keyword.control
+- source: ' pat '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: '*'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tmode"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: GlobMatch
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: any
+- source: if
+  scopes:
+    - keyword.control
+- source: ' next_pattern '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' pattern '
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' next_pattern '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: for
+  scopes:
+    - keyword.control
+- source: ' file '
+- source: in
+  scopes:
+    - keyword.control
+- source: ' files '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' is_dir'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''$dir'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: $file'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\t\tsubdirs "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' ''$dir'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: $file'
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' subdirs'
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' pat '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: '*'
+  scopesBegin:
+    - keyword.operator.arithmetic
+- source: '*'
+  scopesEnd:
+    - keyword.operator.arithmetic
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tfiles"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: walk_ext
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: dir
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tpat"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: next_pattern
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' pat'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: starts_with
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '*'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tmode"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ends_with
+- source: "\t\tpat"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pat
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' pat'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ends_with
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '*'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tmode"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' mode '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'ends_with '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' GlobMatch'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'contains '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' GlobMatch'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'starts_with '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tpat"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pat
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: pat
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' pat'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '*'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tmode"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: start_and_ends_with
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: for
+  scopes:
+    - keyword.control
+- source: ' file '
+- source: in
+  scopes:
+    - keyword.control
+- source: ' files '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' fpath'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: file
+- source: "\t\tf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' file'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: path_separator
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tpathwalk"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: file
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: split
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: path_separator
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\tpathwalk"
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: pathwalk
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tfpath"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' dir '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' file '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' ''$dir'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: '$file'' '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tfile"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' f '
+- source: in
+  scopes:
+    - keyword.control
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ''''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: ''''
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' f '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: continue
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\thit"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: match
+  scopes:
+    - keyword.control
+- source: ' mode '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'any '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'exact '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tf "
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' pat'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'starts_with '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: starts_with
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pat
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'ends_with '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ends_with
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pat
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'start_and_ends_with '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tp"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pat
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: split
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '*'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\t\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: starts_with
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' f'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ends_with
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: p
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'contains '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pat
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' hit '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' is_dir'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: fpath
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tsubdirs "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' fpath'
+- source: if
+  scopes:
+    - keyword.control
+- source: ' next_pattern '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' pattern '
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' next_pattern '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\t\tmatches "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' ''$fpath$os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: path_separator'
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tmatches "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' fpath'
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' subdirs'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' native_glob_pattern'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'pattern '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' matches '
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tsteps"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pattern
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: split
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: path_separator
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' cwd'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' pattern'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: starts_with
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: path_separator
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'path_separator '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' '''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''' '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' subdirs'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: cwd
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: for
+  scopes:
+    - keyword.control
+- source: ' i'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '; i '
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: ' steps'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: len; i
+- source: ++
+  scopes:
+    - keyword.operator.arithmetic
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tstep"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: steps
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: i
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: "\t\tstep"
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' i '
+- source: +
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' steps'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' step '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' steps'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: 'i '
+- source: +
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' step '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: continue
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' is_dir'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''$cwd$os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: path_separator$step'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tdd"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' cwd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tstep"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' cwd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''' '
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' cwd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\t\tstep"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' step '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''' '
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' step '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' cwd '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' ''$cwd'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: '$step'' '
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' i '
+- source: +
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' steps'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' dd '
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: in
+  scopes:
+    - keyword.control
+- source: ' subdirs '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\t\tsubdirs "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' dd'
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' subs'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: for
+  scopes:
+    - keyword.control
+- source: ' sd '
+- source: in
+  scopes:
+    - keyword.control
+- source: ' subdirs '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\td"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' cwd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\tsd"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' cwd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''' '
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' cwd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\t\tsd"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' sd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''' '
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' sd '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' cwd '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' ''$cwd'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: '$sd'' '
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tsubs "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' glob_match'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: replace
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ''', ''/''), step, step2, mut matches)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\t}"
+- source: "\t\tsubdirs"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: subs
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: clone
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t}"
+- source: '}'
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' utime'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' actime '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' modtime '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' u'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: utimbuf
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: actime
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' modtime'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: utime
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: u
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error_with_code'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: posix_get_error_msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: errno
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: errno
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' uname'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' Uname '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' u'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: Uname
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tutsize"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: sizeof
+  scopes:
+    - keyword.sizeof
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: utsname
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: malloc_noscan
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: int
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: utsize
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: "\t\td"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: utsname
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: x
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: uname
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tu"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: sysname
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: c
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _to_v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: sysname
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\tu"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: nodename
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: c
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _to_v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: nodename
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\tu"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: release
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: c
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _to_v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: release
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\tu"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: version
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: c
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _to_v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: version
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\tu"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: machine
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: c
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _to_v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: machine
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tfree"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: d
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' u'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' hostname'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' hstnme'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''''''
+- source: "\tsize"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '256'
+  scopes:
+    - constant.numeric.integer
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' buf'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: malloc_noscan
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: size
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: gethostname
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: buf
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' size'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\thstnme"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' c'
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _to_v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: buf
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' free'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: buf
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' hstnme'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' '''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' loginname'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getlogin
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: isnil
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: x
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopesBegin:
+    - keyword.control
+- source: unsafe
+  scopesEnd:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' c'
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: _to_v
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: x
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' '''''
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' init_os_args'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'argc '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' argv '
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' args_'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'len: argc'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: for
+  scopes:
+    - keyword.control
+- source: ' i '
+- source: in
+  scopes:
+    - keyword.control
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: ' argc '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\targs_"
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: i
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' tos_clone'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: argv
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: i
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' args_'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' ls'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' path'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'len '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''ls'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' expects a folder'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' not an empty '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'cap: '
+- source: '50'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tdir"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: opendir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' isnil'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: dir
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''ls'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' couldnt open dir "$path"'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' ent'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: dirent
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' mut ent := &C.dirent{!}'
+  scopesEnd:
+    - comment.line.double-slash
+- source: for
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tent"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: readdir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: dir
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' isnil'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ent
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: break
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tbptr"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: ent
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: d_name
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' bptr'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bptr
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' `'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: '` '
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' bptr'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '|'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '|'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bptr
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' `'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: '` '
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' bptr'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' `'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: '` '
+- source: '&'
+  scopesBegin:
+    - keyword.operator.bitwise
+- source: '&'
+  scopesEnd:
+    - keyword.operator.bitwise
+- source: ' bptr'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: continue
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tres "
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' tos_clone'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bptr
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: closedir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: dir
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' res'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: 'pub fn is_dir(path string) bool {'
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '$if linux {'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: 'C.syscall(4, path.str) // sys_newstat'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '}'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tdir := C.opendir(path.str)"
+- source: "\tres := !isnil(dir)"
+- source: "\tif res {"
+- source: "\t\tC.closedir(dir)"
+- source: "\t}"
+- source: "\treturn res"
+- source: '}'
+- source: '*/'
+  scopes:
+    - punctuation.definition.comment.end
+  scopesEnd:
+    - comment.block.documentation
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' mkdir creates a new directory with the specified path.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' mkdir'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' path '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: "\tmut k := 0"
+- source: "\tdefer {"
+- source: "\t\tk = 1"
+- source: "\t}"
+- source: '*/'
+  scopes:
+    - punctuation.definition.comment.end
+  scopesEnd:
+    - comment.block.documentation
+- source: "\tapath"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: real_path
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' defer {'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' apath.free()'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '}'
+  scopesEnd:
+    - comment.line.double-slash
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: "\t$if linux {"
+- source: "\t\t$if !android {"
+- source: "\t\t\tret := C.syscall(sys_mkdir, apath.str, 511)"
+- source: "\t\t\tif ret == -1 {"
+- source: "\t\t\t\treturn error(posix_get_error_msg(C.errno))"
+- source: "\t\t\t}"
+- source: "\t\t\treturn true"
+- source: "\t\t}"
+- source: "\t}"
+- source: '*/'
+  scopes:
+    - punctuation.definition.comment.end
+  scopesEnd:
+    - comment.block.documentation
+- source: "\tr"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: mkdir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: apath
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '511'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' r '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: posix_get_error_msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: errno
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' execute starts the specified command, waits for it to complete, and returns its output.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: manualfree
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' execute'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'cmd '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' Result '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' if cmd.contains('';'') || cmd.contains(''&&'') || cmd.contains(''||'') || cmd.contains(''\n'') {'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' return Result{ exit_code: -1, output: '';, &&, || and \\n are not allowed in shell commands'' }'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' }'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tpcmd"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: if
+  scopes:
+    - keyword.control
+- source: ' cmd'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' cmd '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' ''$cmd '
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''' '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: vpopen
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pcmd
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' isnil'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: f
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' Result'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\texit_code: "
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: "\t\t\toutput: 'exec"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '"$cmd"'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' failed'''
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\tfd"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: fileno
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: f
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: new_builder
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '1024'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: defer
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' res'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: free
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\tbuf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '4096'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tpbuf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: buf
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: for
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tlen"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: fd
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' pbuf'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '4096'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' len '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: break
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tres"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_ptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pbuf
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' len'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\tsoutput"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: res
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\texit_code"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: vpclose
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: f
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' Result'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\texit_code: exit_code"
+- source: "\t\toutput: soutput"
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: manualfree
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' c Command'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' start'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tpcmd"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: c
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'path '
+- source: +
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' '' '
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: defer
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' pcmd'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: free
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\tc"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: f
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: vpopen
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: pcmd
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' isnil'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: c
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: f
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''exec'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '"$c'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: path"
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' failed'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: manualfree
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' c Command'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' read_line'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tbuf"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '4096'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' res'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: new_builder
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '1024'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: defer
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' res'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: free
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tbufbp"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: buf
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: for
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: fgets
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bufbp
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '4096'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' c'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: f
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tlen"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: vstrlen
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bufbp
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: for
+  scopes:
+    - keyword.control
+- source: ' i '
+- source: in
+  scopes:
+    - keyword.control
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopesBegin:
+    - punctuation.accessor
+- source: .
+  scopesEnd:
+    - punctuation.accessor
+- source: ' len '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' bufbp'
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: i
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' `\n` '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\t\t\tres"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_ptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bufbp
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' i'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\t\t\t\tfinal"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: res
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' final'
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\t\tres"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write_ptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: bufbp
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' len'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\tc"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: eof
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 'true'
+  scopes:
+    - constant.language
+- source: "\tfinal"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: res
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' final'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' c Command'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' close'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tc"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exit_code
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: vpclose
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: c
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: f
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' c'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'exit_code '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '127'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error_with_code'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''error'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '127'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' symlink'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'origin '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' target '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tres"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: symlink
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: origin
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: target
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' res '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: posix_get_error_msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: errno
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' link'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'origin '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' target '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tres"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: link
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: origin
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: target
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' res '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: posix_get_error_msg
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: errno
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' get_error_msg return error code representation in string.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' get_error_msg'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'code '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' posix_get_error_msg'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: code
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' f File'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' close'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'is_opened '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tf"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: is_opened
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 'false'
+  scopes:
+    - constant.language
+- source: /*
+  scopesBegin:
+    - comment.block.documentation
+  scopes:
+    - punctuation.definition.comment.begin
+- source: "\t$if linux {"
+- source: "\t\t$if !android {"
+- source: "\t\t\tC.syscall(sys_close, f.fd)"
+- source: "\t\t\treturn"
+- source: "\t\t}"
+- source: "\t}"
+- source: '*/'
+  scopes:
+    - punctuation.definition.comment.end
+  scopesEnd:
+    - comment.block.documentation
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: fflush
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: cfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: fclose
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: f
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: cfile
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: inline
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' debugger_present'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' check if the parent could trace its process,'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' if not a debugger must be present'
+  scopesEnd:
+    - comment.line.double-slash
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' linux '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ptrace
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: PTRACE_TRACEME
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $else
+  scopesBegin:
+    - keyword.control
+- source: $if
+  scopesEnd:
+    - keyword.control
+- source: ' macos '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: ptrace
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: PT_TRACE_ME
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: mkstemp
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'stemplate '
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: byte
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.byte
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' `is_writable_folder` - `folder` exists and is writable to the process'
+  scopesEnd:
+    - comment.line.double-slash
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: manualfree
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' is_writable_folder'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'folder '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: exists
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: folder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''`$folder` does not exist'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: is_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: folder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''`folder`'
+- source: is
+  scopes:
+    - keyword.is
+- source: not
+  scopes:
+    - entity.name.alias
+- source: ' a folder'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\ttmp_perm_check"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: join_path_single
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: folder
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''XXXXXX'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: defer
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' tmp_perm_check'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: free
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tx"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: mkstemp
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tmp_perm_check
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: if
+  scopes:
+    - keyword.control
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' x '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' error'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''folder `$folder`'
+- source: is
+  scopes:
+    - keyword.is
+- source: not
+  scopes:
+    - entity.name.alias
+- source: ' writable'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: x
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\trm"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: tmp_perm_check
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: return
+  scopes:
+    - keyword.control
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: inline
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' getpid'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getpid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: inline
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' getppid'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getppid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: inline
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' getuid'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getuid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: inline
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' geteuid'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: geteuid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: inline
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' getgid'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getgid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: inline
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' getegid'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getegid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Turns the given bit on or off, depending on the `enable` parameter'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' posix_set_permission_bit'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'path_s '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' mode '
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' enable '
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' s'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: C
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stat
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' new_mode'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: u32
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tpath"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: char
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path_s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: str
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: unsafe
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stat
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: s
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\tnew_mode"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: s
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: st_mode
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: match
+  scopes:
+    - keyword.control
+- source: ' enable '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: 'true'
+  scopes:
+    - constant.language
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' new_mode'
+- source: '|='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 'mode '
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: 'false'
+  scopes:
+    - constant.language
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' new_mode'
+- source: '&='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 0o7777
+  scopes:
+    - constant.numeric.octal
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' mode'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: "\tC"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: chmod
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: path
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: int
+  scopes:
+    - meta.expr.numeric.cast
+    - storage.type.numeric
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: new_mode
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

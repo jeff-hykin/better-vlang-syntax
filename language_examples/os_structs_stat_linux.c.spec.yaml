@@ -1,0 +1,209 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'stat '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tst_dev     "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_ino     "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_nlink   "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_mode    "
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 4'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_uid     "
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 4'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_gid     "
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 4'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_rdev    "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_size    "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_blksize "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_blocks  "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_atime   "
+- source: i64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_mtime   "
+- source: i64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tst_ctime   "
+- source: i64
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' 8'
+  scopesEnd:
+    - comment.line.double-slash
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: __stat
+- source: '64'
+  scopes:
+    - constant.numeric.integer
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tst_mode  "
+- source: u32
+  scopes:
+    - storage.type.numeric
+- source: "\tst_size  "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: "\tst_mtime "
+- source: u64
+  scopes:
+    - storage.type.numeric
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

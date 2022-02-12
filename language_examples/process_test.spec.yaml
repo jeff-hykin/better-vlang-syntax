@@ -1,0 +1,1397 @@
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' vtest retry: 3'
+  scopesEnd:
+    - comment.line.double-slash
+- source: import
+  scopesBegin:
+    - meta.import
+  scopes:
+    - keyword.import
+- source: os
+  scopes:
+    - entity.name.import
+- source: import
+  scopes:
+    - keyword.import
+- source: time
+  scopes:
+    - entity.name.import
+  scopesEnd:
+    - meta.import
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: "\tvexe"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''VEXE'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tvroot"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: vexe
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\ttest_os_process"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: join_path
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: temp_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''v'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''test_os_process'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exe'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\ttest_os_process_source"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: join_path
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: vroot
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''cmd'
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: tools
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: test_os_process
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: v'
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' testsuite_begin'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: rm
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: test_os_process
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: if
+  scopes:
+    - keyword.control
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''WINE_TEST_OS_PROCESS_EXE'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' '''' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' Make it easier to run the test under wine emulation, by just'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' prebuilding the executable with:'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '   v -os windows -o x.exe cmd/tools/test_os_process.v'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: '   WINE_TEST_OS_PROCESS_EXE=x.exe ./v -os windows vlib/os/process_test.v'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\t\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: cp
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getenv
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''WINE_TEST_OS_PROCESS_EXE'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' test_os_process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: else
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: system
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''$'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: quoted_path
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: vexe
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: o $
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: quoted_path
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: test_os_process
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: ' $'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: quoted_path
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: test_os_process_source
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exists
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: test_os_process
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_getpid'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tpid"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getpid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''current pid: $pid'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' pid '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_run'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: new_process
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: test_os_process
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: set_args
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ''''
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: timeout_ms'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''
+- source: '150'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: period_ms'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''
+- source: '50'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: run
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: running
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'pid '
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'pid '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getpid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' i'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: for
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: is_alive
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: break
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' trace_process_output '
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\t\tos"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: system
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''ps '
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: opid
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: oppid
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ouser
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: onice
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: of
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ovsz
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: orss
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: otime
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: oargs
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: p $p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: pid'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\t\ttime"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: sleep
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '50'
+  scopes:
+    - constant.numeric.integer
+- source: '*'
+  scopes:
+    - keyword.operator.arithmetic
+- source: ' time'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: millisecond
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\ti"
+- source: ++
+  scopes:
+    - keyword.operator.arithmetic
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: wait
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'code '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exited
+- source: //
+  scopes:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: "\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''polling iterations: $i'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' i '
+- source: <
+  scopes:
+    - keyword.operator.relation
+- source: '50'
+  scopes:
+    - constant.numeric.integer
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_wait'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: new_process
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: test_os_process
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exited
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: wait
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exited
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'code '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'pid '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: ' os'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: getpid
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_slurping_output'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: new_process
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: test_os_process
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: set_args
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ''''
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: timeout_ms'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''
+- source: '500'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: period_ms'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' '''
+- source: '50'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: set_redirect_stdio
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exited
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: wait
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: exited
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'code '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: '0'
+  scopes:
+    - constant.numeric.integer
+- source: "\toutput"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stdout_slurp
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: trim_space
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\terrors"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: p
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: stderr_slurp
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: trim_space
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: $if
+  scopes:
+    - keyword.control
+- source: ' trace_process_output '
+- source: '?'
+  scopes:
+    - keyword.operator.optional
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '--'
+  scopesBegin:
+    - keyword.operator.arithmetic
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '-'
+  scopesEnd:
+    - keyword.operator.arithmetic
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''p output: "$output"'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''p errors: "$errors"'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\t\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '--'
+  scopesBegin:
+    - keyword.operator.arithmetic
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '--'
+- source: '-'
+  scopesEnd:
+    - keyword.operator.arithmetic
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' dump(output)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' output'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stdout'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' output'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stdout'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' output'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stdout'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' output'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stdout'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '4'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+    - punctuation.definition.comment.begin
+- source: //
+  scopesEnd:
+    - punctuation.definition.comment.begin
+- source: ' dump(errors)'
+  scopesEnd:
+    - comment.line.double-slash
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' errors'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stderr'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' errors'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stderr'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' errors'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stderr'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' errors'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: contains
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''stderr'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '4'
+  scopes:
+    - constant.numeric.integer
+- source: ''''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

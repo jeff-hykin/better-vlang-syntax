@@ -1,0 +1,757 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: const
+  scopes:
+    - storage.modifier
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' tfolder will contain all the temporary files/subfolders made by'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the different tests. It would be removed in testsuite_end(), so'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' individual os tests do not need to clean up after themselves.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\ttfolder"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: join_path
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: temp_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''v'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''tests'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''inode_test'''
+- source: )
+  scopesBegin:
+    - punctuation.definition.bracket.round.end
+- source: )
+  scopesEnd:
+    - punctuation.definition.bracket.round.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' testsuite_begin'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\teprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: '''testsuite_begin'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' tfolder'
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: $os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\trmdir_all"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: is_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tmkdir_all"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' panic'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: err
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tchdir"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' is_dir'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' testsuite_end'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tchdir"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: wd_at_startup
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\trmdir_all"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' panic'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: err
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: is_dir
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: os
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: tfolder
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_inode_file_type'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tfilename"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: test
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: txt'
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' file'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 0o600
+  scopes:
+    - constant.numeric.octal
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tfile"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tmode"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: inode
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\trm"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: ' panic'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: err
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' mode'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'typ '
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: regular
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_inode_file_owner_permission'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tfilename"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: test
+- source: '2'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: txt'
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' file'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 0o600
+  scopes:
+    - constant.numeric.octal
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tfile"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tmode"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: inode
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\trm"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' mode'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: owner
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: read
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' mode'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: owner
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: write
+- source: assert
+  scopes:
+    - keyword.assert
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: mode
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: owner
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: execute
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' test_inode_file_permissions_bitmask'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' user_os'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: ' ''windows'' '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tprintln"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: ''''
+- source: '>'
+  scopes:
+    - keyword.operator.relation
+- source: ' skipping $'
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '@FN'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: ' on windows'''
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tfilename"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: ''''
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: /
+  scopes:
+    - keyword.operator.arithmetic
+- source: test
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: txt'
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' file'
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: open_file
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' ''w'''
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: 0o641
+  scopes:
+    - constant.numeric.octal
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tfile"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: close
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\tmode"
+- source: ':='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: inode
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: "\trm"
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: filename
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: or
+  scopes:
+    - keyword.control
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: assert
+  scopes:
+    - keyword.assert
+- source: ' mode'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: bitmask
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '=='
+  scopes:
+    - keyword.operator.relation
+- source: 0o641
+  scopes:
+    - constant.numeric.octal
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

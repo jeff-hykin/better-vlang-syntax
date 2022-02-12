@@ -1,0 +1,65 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: pub
+  scopes:
+    - storage.modifier
+- source: type
+  scopes:
+    - keyword.type
+- source: ' FN_SA_Handler'
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'sig '
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' C'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'sigaction '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ':'
+- source: "\tsa_mask      "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: "\tsa_sigaction "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: "\tsa_flags     "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: "\tsa_handler   FN_SA_Handler"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end

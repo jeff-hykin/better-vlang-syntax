@@ -1,0 +1,619 @@
+- source: module
+  scopesBegin:
+    - meta.module
+  scopes:
+    - keyword.module
+- source: os
+  scopes:
+    - entity.name.module
+  scopesEnd:
+    - meta.module
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' - ProcessState.not_started - the process has not yet started'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' - ProcessState.running - the process is currently running'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' - ProcessState.stopped - the process was running, but was stopped temporarily'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' - ProcessState.exited - the process has finished/exited'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' - ProcessState.aborted - the process was terminated by a signal'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' - ProcessState.closed - the process resources like opened file descriptors were freed/discarded, final state.'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: enum
+  scopes:
+    - keyword.enum
+- source: ' ProcessState '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\tnot_started"
+- source: "\trunning"
+- source: "\tstopped"
+- source: "\texited"
+- source: "\taborted"
+- source: "\tclosed"
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: '['
+  scopesBegin:
+    - meta.definition.attribute
+    - meta.function.attribute
+  scopes:
+    - punctuation.definition.begin.bracket.square
+- source: heap
+  scopes:
+    - storage.modifier.attribute
+- source: ']'
+  scopes:
+    - punctuation.definition.end.bracket.square
+  scopesEnd:
+    - meta.definition.attribute
+    - meta.function.attribute
+- source: pub
+  scopes:
+    - storage.modifier
+- source: struct
+  scopes:
+    - keyword.struct
+- source: ' Process '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: pub
+  scopes:
+    - storage.modifier
+- source: ':'
+- source: "\tfilename "
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the process''s command file path'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopesBegin:
+    - storage.modifier
+- source: mut
+  scopesEnd:
+    - storage.modifier
+- source: ':'
+- source: "\tpid  "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the PID of the process'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tcode "
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the exit code of the process, != -1 *only* when status is .exited *and* the process was not aborted'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tstatus ProcessState"
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: not_started
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the current status of the process'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\terr           "
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' if the process fails, contains the reason why'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\targs          "
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the arguments that the command takes'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tenv_is_custom "
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' true, when the environment was customized with .set_environment'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tenv           "
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the environment with which the process was started  (list of ''var=val'')'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tuse_stdio_ctl "
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' when true, then you can use p.stdin_write(), p.stdout_slurp() and p.stderr_slurp()'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tuse_pgroup    "
+- source: bool
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.bool
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' when true, the process will create a new process group, enabling .signal_pgkill()'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\tstdio_fd      "
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '3'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: int
+  scopes:
+    - storage.type.numeric
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the stdio file descriptors for the child process, used only by the nix implementation'
+  scopesEnd:
+    - comment.line.double-slash
+- source: "\twdata         "
+- source: voidptr
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.voidptr
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' the WProcess; used only by the windows implementation'
+  scopesEnd:
+    - comment.line.double-slash
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' new_process - create a new process descriptor'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' NB: new does NOT start the new process.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' That is done because you may want to customize it first,'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' by calling different set_ methods on it.'
+- source: //
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' In order to start it, call p.run() or p.wait()'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: ' new_process'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'filename '
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: 'Process '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '&'
+  scopes:
+    - keyword.operator.bitwise
+- source: Process
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tfilename: filename"
+- source: "\t\tstdio_fd: "
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: '-'
+  scopes:
+    - keyword.operator.arithmetic
+- source: '1'
+  scopes:
+    - constant.numeric.integer
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: '!'
+  scopes:
+    - keyword.operator.logical
+- source: '}'
+  scopesBegin:
+    - punctuation.definition.bracket.curly.end
+- source: '}'
+  scopesEnd:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' set_args - set the arguments for the new process'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' set_args'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'pargs '
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'not_started '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: args
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: pargs
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: //
+  scopesBegin:
+    - comment.line.double-slash
+  scopes:
+    - punctuation.definition.comment.begin
+- source: ' set_environment - set a custom environment variable mapping for the new process'
+  scopesEnd:
+    - comment.line.double-slash
+- source: pub
+  scopes:
+    - storage.modifier
+- source: fn
+  scopes:
+    - keyword.fn
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: mut
+  scopes:
+    - storage.modifier
+- source: ' p Process'
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: ' set_environment'
+- source: (
+  scopes:
+    - punctuation.definition.bracket.round.begin
+- source: 'envs '
+- source: map
+  scopes:
+    - keyword.map
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: )
+  scopes:
+    - punctuation.definition.bracket.round.end
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: if
+  scopes:
+    - keyword.control
+- source: ' p'
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'status '
+- source: '!='
+  scopes:
+    - keyword.operator.relation
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'not_started '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: env_is_custom
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: 'true'
+  scopes:
+    - constant.language
+- source: "\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: env
+- source: '='
+  scopes:
+    - meta.definition.variable
+    - keyword.operator.assignment
+- source: '['
+  scopes:
+    - punctuation.definition.bracket.square.begin
+- source: ']'
+  scopes:
+    - punctuation.definition.bracket.square.end
+- source: string
+  scopes:
+    - meta.expr.bool.cast
+    - storage.type.string
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: for
+  scopes:
+    - keyword.control
+- source: ' k'
+- source: ','
+  scopes:
+    - punctuation.separator.comma
+- source: ' v '
+- source: in
+  scopes:
+    - keyword.control
+- source: ' envs '
+- source: '{'
+  scopes:
+    - punctuation.definition.bracket.curly.begin
+- source: "\t\tp"
+- source: .
+  scopes:
+    - punctuation.accessor
+- source: 'env '
+- source: '<<'
+  scopes:
+    - keyword.operator.bitwise
+- source: ' ''$k'
+- source: '='
+  scopes:
+    - keyword.operator.assignment
+- source: $v'
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
+- source: return
+  scopes:
+    - keyword.control
+- source: '}'
+  scopes:
+    - punctuation.definition.bracket.curly.end
