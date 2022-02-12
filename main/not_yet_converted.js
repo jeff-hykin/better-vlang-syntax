@@ -1,108 +1,3 @@
-grammar[:brackets] = Pattern.new(
-    includes: [
-        {
-            start_pattern: /{/,
-            "beginCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.bracket.curly.begin",
-                }
-            },
-            end_pattern: /}/,
-            "endCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.bracket.curly.end",
-                }
-            },
-            includes: [
-                :$inital_context,
-            ]
-        },
-        {
-            start_pattern: /\\(/,
-            "beginCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.bracket.round.begin",
-                }
-            },
-            end_pattern: /\\)/,
-            "endCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.bracket.round.end",
-                }
-            },
-            includes: [
-                :$inital_context,
-            ]
-        },
-        {
-            start_pattern: /\[/,
-            "beginCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.bracket.square.begin",
-                }
-            },
-            end_pattern: /\]/,
-            "endCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.bracket.square.end",
-                }
-            },
-            includes: [
-                :$inital_context,
-            ]
-        }
-    ]
-)
-grammar[:builtin_fix] = Pattern.new(
-    includes: [
-        {
-            includes: [
-                {
-                    tag_as: "storage.modifier",
-                    match: /(const)(?=\s*\\()/,
-                },
-                {
-                    tag_as: "keyword.$1",
-                    match: /\\b(fn|type|enum|struct|union|interface|map|assert|sizeof|typeof|__offsetof)\\b(?=\s*\\()/,
-                }
-            ]
-        },
-        {
-            includes: [
-                {
-                    tag_as: "keyword.control",
-                    match: /(\\$if|\\$else)(?=\s*\\()/,
-                },
-                {
-                    tag_as: "keyword.control",
-                    match: /\\b(as|in|is|or|break|continue|default|unsafe|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm)\\b(?=\s*\\()/,
-                }
-            ]
-        },
-        {
-            includes: [
-                {
-                    match: /(i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64))(?=\s*\\()/,
-                    "captures": {
-                        "1": {
-                            tag_as: "storage.type.numeric",
-                        }
-                    },
-                    tag_as: "meta.expr.numeric.cast",
-                },
-                {
-                    match: /(bool|byte|byteptr|charptr|voidptr|string|rune|size_t)(?=\s*\\()/,
-                    "captures": {
-                        "1": {
-                            tag_as: "storage.type.$1",
-                        }
-                    },
-                    tag_as: "meta.expr.bool.cast",
-                }
-            ]
-        }
-    ]
-)
 grammar[:escaped_fix] = Pattern.new(
     tag_as: "meta.escaped.keyword",
     match: /((?:@)(?:mut|pub|fn|unsafe|module|import|as|const|map|assert|sizeof|__offsetof|typeof|type|struct|interface|enum|in|is|or|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm|i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)|bool|byte|byteptr|charptr|voidptr|string|ustring|rune))/,
@@ -116,43 +11,37 @@ grammar[:comments] = Pattern.new(
     includes: [
         {
             tag_as: "comment.block.documentation",
-            start_pattern: //\*/,
-            "beginCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.comment.begin",
-                }
-            },
-            end_pattern: /\*//,
-            "endCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.comment.end",
-                }
-            },
+            start_pattern: Pattern.new(
+                match: //\*/,
+                tag_as: "punctuation.definition.comment.begin",
+            ),
+            end_pattern: Pattern.new(
+                match: /\*//,
+                tag_as: "punctuation.definition.comment.end",
+            ),
             includes: [
                 :comments,
             ]
         },
         {
             tag_as: "comment.line.double-slash",
-            start_pattern: ////,
-            "beginCaptures": {
-                "0": {
-                    tag_as: "punctuation.definition.comment.begin",
-                }
-            },
+            start_pattern: Pattern.new(
+                match: ////,
+                tag_as: "punctuation.definition.comment.begin",
+            ),
             end_pattern: "$"
         }
     ]
 )
 grammar[:constants] = Pattern.new(
     tag_as: "constant.language",
-    match: /\\b(true|false|none)\\b/,
+    match: /\b(true|false|none)\b/,
 )
 grammar[:generic] = Pattern.new(
     includes: [
         {
             tag_as: "meta.definition.generic",
-            match: /(?<=[\w\s+])(\\<)(\w+)(\\>)/,
+            match: /(?<=[\w\s+])(\<)(\w+)(\>)/,
             "captures": {
                 "1": {
                     tag_as: "punctuation.definition.bracket.angle.begin",
@@ -177,7 +66,9 @@ grammar[:generic] = Pattern.new(
 )
 grammar[:function_decl] = Pattern.newRange(
     tag_as: "meta.definition.function",
-    start_pattern: /^\s*(pub)?\s*(fn)\s+/,
+    start_pattern: Pattern.new(
+        /^\s*(pub)?\s*(fn)\s+/
+    ),
     "beginCaptures": {
         "1": {
             tag_as: "storage.modifier",
@@ -186,7 +77,9 @@ grammar[:function_decl] = Pattern.newRange(
             tag_as: "keyword.function",
         }
     },
-    end_pattern: /(?:(?:C\.)?)(\w+)\s*((?<=[\w\s+])(\\<)(\w+)(\\>))?/,
+    end_pattern: Pattern.new(
+        match: /(?:(?:C\.)?)(\w+)\s*((?<=[\w\s+])(\<)(\w+)(\>))?/
+    ),
     "endCaptures": {
         "1": {
             includes: [
@@ -206,7 +99,7 @@ grammar[:function_decl] = Pattern.newRange(
 )
 grammar[:function_extend_decl] = Pattern.new(
     tag_as: "meta.definition.function",
-    match: /^\s*(pub)?\s*(fn)\s*(\\()([^\\)]*)(\\))\s*(?:(?:C\.)?)(\w+)\s*((?<=[\w\s+])(\\<)(\w+)(\\>))?/,
+    match: /^\s*(pub)?\s*(fn)\s*(\()([^\)]*)(\))\s*(?:(?:C\.)?)(\w+)\s*((?<=[\w\s+])(\<)(\w+)(\>))?/,
     "captures": {
         "1": {
             tag_as: "storage.modifier",
@@ -255,7 +148,7 @@ grammar[:function_extend_decl] = Pattern.new(
 )
 grammar[:function_limited_overload_decl] = Pattern.new(
     tag_as: "meta.definition.function",
-    match: /^\s*(pub)?\s*(fn)\s*(\\()([^\\)]*)(\\))\s*([\+\-\*\/])?\s*(\\()([^\\)]*)(\\))\s*(?:(?:C\.)?)(\w+)/,
+    match: /^\s*(pub)?\s*(fn)\s*(\()([^\)]*)(\))\s*([\+\-\*\/])?\s*(\()([^\)]*)(\))\s*(?:(?:C\.)?)(\w+)/,
     "captures": {
         "1": {
             tag_as: "storage.modifier",
@@ -327,7 +220,7 @@ grammar[:function_limited_overload_decl] = Pattern.new(
 )
 grammar[:function_exist] = Pattern.new(
     tag_as: "meta.support.function",
-    match: /(\w+)((?<=[\w\s+])(\\<)(\w+)(\\>))?(?=\s*\\()/,
+    match: /(\w+)((?<=[\w\s+])(\<)(\w+)(\>))?(?=\s*\()/,
     "captures": {
         "0": {
             tag_as: "meta.function.call",
@@ -424,7 +317,9 @@ grammar[:struct] = Pattern.new(
     includes: [
         {
             tag_as: "meta.definition.struct",
-            start_pattern: /^\s*(?:(mut|pub(?:\s+mut)?|__global)\s+)?(struct|union)\s+([\w.]+)\s*|({)/,
+            start_pattern: Pattern.new(
+                /^\s*(?:(mut|pub(?:\s+mut)?|__global)\s+)?(struct|union)\s+([\w.]+)\s*|({)/
+            ),
             "beginCaptures": {
                 "1": {
                     tag_as: "storage.modifier.$1",
@@ -439,7 +334,9 @@ grammar[:struct] = Pattern.new(
                     tag_as: "punctuation.definition.bracket.curly.begin",
                 }
             },
-            end_pattern: /\s*|(})/,
+            end_pattern: Pattern.new(
+                match: /\s*|(})/
+            ),
             "endCaptures": {
                 "1": {
                     tag_as: "punctuation.definition.bracket.curly.end",
@@ -448,7 +345,7 @@ grammar[:struct] = Pattern.new(
             includes: [
                 "#struct-acces:modifier,
                 {
-                    match: /\\b(\w+)\s+([\w\[\]\*&.]+)(?:\s*(=)\s*((?:.(?=$|//|/\*))*+))?/,
+                    match: /\b(\w+)\s+([\w\[\]\*&.]+)(?:\s*(=)\s*((?:.(?=$|//|/\*))*+))?/,
                     "captures": {
                         "1": {
                             tag_as: "variable.other.property",
@@ -504,7 +401,7 @@ grammar[:struct] = Pattern.new(
     ]
 )
 grammar[:struct_access_modifier] = Pattern.new(
-    match: /(?<=\s|^)(mut|pub(?:\s+mut)?|__global)(:|\\b)/,
+    match: /(?<=\s|^)(mut|pub(?:\s+mut)?|__global)(:|\b)/,
     "captures": {
         "1": {
             tag_as: "storage.modifier.$1",
@@ -546,31 +443,31 @@ grammar[:keywords] = Pattern.new(
     includes: [
         {
             tag_as: "keyword.control",
-            match: /(\\$if|\\$else)/,
+            match: /(\$if|\$else)/,
         },
         {
             tag_as: "keyword.control",
-            match: /\\b(as|it|is|in|or|break|continue|default|unsafe|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm)\\b/,
+            match: /\b(as|it|is|in|or|break|continue|default|unsafe|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm)\b/,
         },
         {
             tag_as: "keyword.$1",
-            match: /\\b(fn|type|typeof|enum|struct|interface|map|assert|sizeof|__offsetof)\\b/,
+            match: /\b(fn|type|typeof|enum|struct|interface|map|assert|sizeof|__offsetof)\b/,
         }
     ]
 )
 grammar[:storage] = Pattern.new(
     tag_as: "storage.modifier",
-    match: /\\b(const|mut|pub)\\b/,
+    match: /\b(const|mut|pub)\b/,
 )
 grammar[:types] = Pattern.new(
     includes: [
         {
             tag_as: "storage.type.numeric",
-            match: /(?<!\.)\\b(i(8|16|nt|64|128)|u(8|16|32|64|128)|f(32|64))\\b/,
+            match: /(?<!\.)\b(i(8|16|nt|64|128)|u(8|16|32|64|128)|f(32|64))\b/,
         },
         {
             tag_as: "storage.type.$1",
-            match: /(?<!\.)\\b(bool|byte|byteptr|charptr|voidptr|string|ustring|rune)\\b/,
+            match: /(?<!\.)\b(bool|byte|byteptr|charptr|voidptr|string|ustring|rune)\b/,
         }
     ]
 )
@@ -617,8 +514,12 @@ grammar[:punctuations] = Pattern.new(
 grammar[:strings] = Pattern.new(
     includes: [
         {
-            start_pattern: /`/,
-            end_pattern: /`/,
+            start_pattern: Pattern.new(
+                /`/
+            ),
+            end_pattern: Pattern.new(
+                match: /`/
+            ),
             tag_as: "string.quoted.rune",
             includes: [
                 "#string-escape:char,
@@ -631,13 +532,17 @@ grammar[:strings] = Pattern.new(
             ]
         },
         {
-            start_pattern: /(r)'/,
+            start_pattern: Pattern.new(
+                /(r)'/
+            ),
             "beginCaptures": {
                 "1": {
                     tag_as: "storage.type.string",
                 }
             },
-            end_pattern: /'/,
+            end_pattern: Pattern.new(
+                match: /'/
+            ),
             tag_as: "string.quoted.raw",
             includes: [
                 "#strin:interpolation,
@@ -647,13 +552,17 @@ grammar[:strings] = Pattern.new(
             ]
         },
         {
-            start_pattern: /(r)\"/,
+            start_pattern: Pattern.new(
+                /(r)\"/
+            ),
             "beginCaptures": {
                 "1": {
                     tag_as: "storage.type.string",
                 }
             },
-            end_pattern: /\"/,
+            end_pattern: Pattern.new(
+                match: /\"/
+            ),
             tag_as: "string.quoted.raw",
             includes: [
                 "#strin:interpolation,
@@ -663,13 +572,17 @@ grammar[:strings] = Pattern.new(
             ]
         },
         {
-            start_pattern: /(c?)'/,
+            start_pattern: Pattern.new(
+                /(c?)'/
+            ),
             "beginCaptures": {
                 "1": {
                     tag_as: "storage.type.string",
                 }
             },
-            end_pattern: /'/,
+            end_pattern: Pattern.new(
+                match: /'/
+            ),
             tag_as: "string.quoted",
             includes: [
                 "#string-escape:char,
@@ -682,13 +595,17 @@ grammar[:strings] = Pattern.new(
             ]
         },
         {
-            start_pattern: /(c?)\"/,
+            start_pattern: Pattern.new(
+                /(c?)\"/
+            ),
             "beginCaptures": {
                 "1": {
                     tag_as: "storage.type.string",
                 }
             },
-            end_pattern: /\"/,
+            end_pattern: Pattern.new(
+                match: /\"/
+            ),
             tag_as: "string.quoted",
             includes: [
                 "#string-escape:char,
@@ -706,27 +623,27 @@ grammar[:string_escaped_char] = Pattern.new(
     includes: [
         {
             tag_as: "constant.character.escape",
-            match: /\\\\([0-7]{3}|[\\$abfnrtv\\\\'\"]|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})/,
+            match: /\\\([0-7]{3}|[\$abfnrtv\\\\'\"]|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{8})/,
         },
         {
             tag_as: "invalid.illegal.unknown-escape",
-            match: /\\\[^0-7\\$xuUabfnrtv\\'\"]/,
+            match: /\\\[^0-7\$xuUabfnrtv\\'\"]/,
         }
     ]
 )
 grammar[:string_interpolation] = Pattern.new(
     tag_as: "meta.string.interpolation",
-    match: /(\\$([\w.]+|\\{.*?\\}))/,
+    match: /(\$([\w.]+|\\{.*?\\}))/,
     "captures": {
         "1": {
             includes: [
                 {
                     tag_as: "invalid.illegal",
-                    match: /\\$\\d[\.\w]+/,
+                    match: /\$\\d[\.\w]+/,
                 },
                 {
                     tag_as: "variable.other.interpolated",
-                    match: /\\$([\.\w]+|\\{.*?\\})/,
+                    match: /\$([\.\w]+|\\{.*?\\})/,
                 }
             ]
         }

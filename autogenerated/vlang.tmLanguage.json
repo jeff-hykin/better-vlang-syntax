@@ -1,7 +1,7 @@
 {
   "version": "",
   "name": "V",
-  "scopeName": "source",
+  "scopeName": "source.v",
   "fileTypes": [
     "",
     ".vh",
@@ -20,12 +20,12 @@
       "end": "[\\w.]*",
       "beginCaptures": {
         "1": {
-          "name": "keyword.$1.source"
+          "name": "keyword.$1.v"
         }
       },
       "endCaptures": {
         "0": {
-          "name": "entity.name.alias.source"
+          "name": "entity.name.alias.v"
         }
       }
     },
@@ -33,32 +33,32 @@
       "match": "(?:\\s)+((?:(?::=)|=|(?:\\+=)|(?:\\-=)|(?:\\*=)|(?:\\/=)|(?:%=)|(?:&=)|(?:\\|=)|(?:\\^=)|(?:~=)|(?:&&=)|(?:\\|\\|=)|(?:>>=)|(?:<<=)))(?:\\s)+",
       "captures": {
         "1": {
-          "name": "keyword.operator.assignment.source"
+          "name": "keyword.operator.assignment.v"
         }
       },
-      "name": "meta.definition.variable.source"
+      "name": "meta.definition.variable.v"
     },
     "assignment_operator": {
       "match": "(?:(?::=)|=|(?:\\+=)|(?:\\-=)|(?:\\*=)|(?:\\/=)|(?:%=)|(?:&=)|(?:\\|=)|(?:\\^=)|(?:~=)|(?:&&=)|(?:\\|\\|=)|(?:>>=)|(?:<<=))",
-      "name": "keyword.operator.assignment.source"
+      "name": "keyword.operator.assignment.v"
     },
     "attributes": {
       "match": "^(?:(?:\\s)+)?((\\[)((?:(?:deprecated)|(?:unsafe_fn)|(?:console)|(?:heap)|(?:debug)|(?:manualfree)|(?:typedef)|(?:live)|(?:inline)|(?:flag)|(?:ref_only)|(?:windows_stdcall)|(?:direct_array_access)))(\\]))",
       "captures": {
         "1": {
-          "name": "meta.function.attribute.source"
+          "name": "meta.function.attribute.v"
         },
         "2": {
-          "name": "punctuation.definition.begin.bracket.square.source"
+          "name": "punctuation.definition.begin.bracket.square.v"
         },
         "3": {
-          "name": "storage.modifier.attribute.source"
+          "name": "storage.modifier.attribute.v"
         },
         "4": {
-          "name": "punctuation.definition.end.bracket.square.source"
+          "name": "punctuation.definition.end.bracket.square.v"
         }
       },
-      "name": "meta.definition.attribute.source"
+      "name": "meta.definition.attribute.v"
     },
     "brackets": {
       "patterns": [
@@ -67,12 +67,12 @@
           "end": "}",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.bracket.curly.begin.source"
+              "name": "punctuation.definition.bracket.curly.begin.v"
             }
           },
           "endCaptures": {
             "0": {
-              "name": "punctuation.definition.bracket.curly.end.source"
+              "name": "punctuation.definition.bracket.curly.end.v"
             }
           },
           "patterns": [
@@ -86,12 +86,12 @@
           "end": "\\)",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.bracket.round.begin.source"
+              "name": "punctuation.definition.bracket.round.begin.v"
             }
           },
           "endCaptures": {
             "0": {
-              "name": "punctuation.definition.bracket.round.end.source"
+              "name": "punctuation.definition.bracket.round.end.v"
             }
           },
           "patterns": [
@@ -105,12 +105,12 @@
           "end": "\\]",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.bracket.square.begin.source"
+              "name": "punctuation.definition.bracket.square.begin.v"
             }
           },
           "endCaptures": {
             "0": {
-              "name": "punctuation.definition.bracket.square.end.source"
+              "name": "punctuation.definition.bracket.square.end.v"
             }
           },
           "patterns": [
@@ -121,6 +121,34 @@
         }
       ]
     },
+    "builtin_fix": {
+      "patterns": [
+        {
+          "match": "const(?=\\s*\\()",
+          "name": "storage.modifier.v"
+        },
+        {
+          "match": "(?<!\\w)fn|type|enum|struct|union|interface|map|assert|sizeof|typeof|__offsetof(?!\\w)(?=\\s*\\()",
+          "name": "keyword.$0.v"
+        },
+        {
+          "match": "(?:(?:\\$if)|(?:\\$else))(?=\\s*\\()",
+          "name": "keyword.control.v"
+        },
+        {
+          "match": "(?<!\\w)as|in|is|or|break|continue|default|unsafe|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm(?!\\w)(?=\\s*\\()",
+          "name": "keyword.control.v"
+        },
+        {
+          "match": "i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)(?=\\s*\\()",
+          "name": "meta.expr.numeric.cast.v storage.type.numeric.v"
+        },
+        {
+          "match": "(?<!\\w)bool|byte|byteptr|charptr|voidptr|string|rune|size_t(?!\\w)(?=\\s*\\()",
+          "name": "meta.expr.bool.cast.v storage.type.$0.v"
+        }
+      ]
+    },
     "hash_decl": {
       "begin": "^(?:(?:\\s)+)?\\#",
       "end": "(?:(?:\\n)|$)",
@@ -128,63 +156,63 @@
       },
       "endCaptures": {
       },
-      "name": "markup.bold.source"
+      "name": "markup.bold.v"
     },
     "import_decl": {
       "begin": "^(?:(?:\\s)+)?(import)(?:\\s)+",
       "end": "[\\w.]+",
       "beginCaptures": {
         "1": {
-          "name": "keyword.import.source"
+          "name": "keyword.import.v"
         }
       },
       "endCaptures": {
         "0": {
-          "name": "entity.name.import.source"
+          "name": "entity.name.import.v"
         }
       },
-      "name": "meta.import.source"
+      "name": "meta.import.v"
     },
     "module_decl": {
       "begin": "^(?:(?:\\s)+)?(module)(?:\\s)+",
       "end": "[\\w.]+",
       "beginCaptures": {
         "1": {
-          "name": "keyword.module.source"
+          "name": "keyword.module.v"
         }
       },
       "endCaptures": {
         "0": {
-          "name": "entity.name.module.source"
+          "name": "entity.name.module.v"
         }
       },
-      "name": "meta.module.source"
+      "name": "meta.module.v"
     },
     "operators": {
       "patterns": [
         {
           "match": "(?:(?:\\+\\+)|(?:\\-\\-)|(?:\\+)|(?:\\-)|(?:\\*)|(?:\\/)|%)",
-          "name": "keyword.operator.arithmetic.source"
+          "name": "keyword.operator.arithmetic.v"
         },
         {
           "match": "(?:(?:==)|(?:!=)|(?:>=)|(?:<=)|(?<!>)>(?!>)|(?<!<)<(?!<))",
-          "name": "keyword.operator.relation.source"
+          "name": "keyword.operator.relation.v"
         },
         {
           "match": "(?:(?::=)|=|(?:\\+=)|(?:\\-=)|(?:\\*=)|(?:\\/=)|(?:%=)|(?:&=)|(?:\\|=)|(?:\\^=)|(?:~=)|(?:&&=)|(?:\\|\\|=)|(?:>>=)|(?:<<=))",
-          "name": "keyword.operator.assignment.source"
+          "name": "keyword.operator.assignment.v"
         },
         {
           "match": "(?:&|(?:\\|)|(?:\\^)|~|(?:>>)|(?:<<))",
-          "name": "keyword.operator.bitwise.source"
+          "name": "keyword.operator.bitwise.v"
         },
         {
           "match": "(?:(?:&&)|(?:\\|\\|)|!)",
-          "name": "keyword.operator.logical.source"
+          "name": "keyword.operator.logical.v"
         },
         {
           "match": "\\?",
-          "name": "keyword.operator.optional.source"
+          "name": "keyword.operator.optional.v"
         }
       ]
     }

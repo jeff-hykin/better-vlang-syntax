@@ -224,6 +224,33 @@ grammar = Grammar.new(
             ]
         ),
     ]
+    
+    grammar[:builtin_fix] = [
+        Pattern.new(
+            tag_as: "storage.modifier",
+            match: Pattern.new(/const/).lookAheadFor(/\s*\(/),
+        ),
+        Pattern.new(
+            tag_as: "keyword.$match",
+            match: variableBounds[/fn|type|enum|struct|union|interface|map|assert|sizeof|typeof|__offsetof/].lookAheadFor(/\s*\(/),
+        ),
+        Pattern.new(
+            tag_as: "keyword.control",
+            match: oneOf([ "$if", "$else" ]).lookAheadFor(/\s*\(/),
+        ),
+        Pattern.new(
+            tag_as: "keyword.control",
+            match: variableBounds[/as|in|is|or|break|continue|default|unsafe|match|if|else|for|go|goto|defer|return|shared|select|rlock|lock|atomic|asm/].lookAheadFor(/\s*\(/),
+        ),
+        Pattern.new(
+            tag_as: "meta.expr.numeric.cast storage.type.numeric",
+            match: Pattern.new(/i?(?:8|16|nt|64|128)|u?(?:16|32|64|128)|f?(?:32|64)/).lookAheadFor(/\s*\(/),
+        ),
+        Pattern.new(
+            tag_as: "meta.expr.bool.cast storage.type.$match",
+            match: variableBounds[/bool|byte|byteptr|charptr|voidptr|string|rune|size_t/].lookAheadFor(/\s*\(/),
+        ),
+    ]
 
 #
 # Save
